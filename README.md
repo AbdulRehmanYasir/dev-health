@@ -1,204 +1,866 @@
-# DevHealth — Know Your Project Before Production Does
+<div align="center">
 
-[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/build-production%20ready-success.svg)]()
+# 🛡 DEVHEALTH
 
-> **DevHealth** is a developer-focused static project health analyzer. Users can upload a project ZIP file or provide a public GitHub repository URL. DevHealth inspects the project and produces an overall health rating (0–100) alongside deep audit reports for **Build Health**, **Security**, **Testing**, **Dependencies**, **Performance**, **Documentation**, and **Production Readiness**.
+### Developer Health & Security Analysis Platform
 
-Designed strictly as a professional developer tool with no external paid APIs, zero code execution risks, and a dark-themed engineering dashboard.
+A developer-focused platform for analyzing projects before production through static code inspection, security auditing, dependency analysis, testing evaluation, performance heuristics, documentation checks, and production-readiness scoring.
+
+**Inspect. Analyze. Secure. Ship.**
+
+</div>
 
 ---
 
-## Architecture & Workflow
+## 📌 About
+
+**DevHealth** is a web-based developer health and security analyzer designed to help developers understand the condition of a project before it reaches production.
+
+The platform allows users to upload a project ZIP file, provide a public GitHub repository URL, or analyze built-in sample projects.
+
+DevHealth performs a complete **static project audit** and produces an overall **0–100 health score** alongside detailed reports covering build health, security, testing, dependencies, performance, documentation, and production readiness.
+
+The project focuses on combining **static analysis, security inspection, project intelligence, weighted scoring, and developer-friendly reporting** into one complete application.
+
+---
+
+## ✨ Features
+
+* 📦 ZIP project upload and analysis
+* 🔗 Public GitHub repository analysis
+* 🧪 Built-in sample projects
+* 🔍 Automatic project type detection
+* 💻 Programming language detection
+* 🌳 Project structure analysis
+* 🏗 Build health analysis
+* 🔐 Static security auditing
+* 🔑 Exposed secret detection
+* 🎭 Automatic secret masking
+* 🧪 Testing and test-ratio analysis
+* 📦 Dependency analysis
+* ⚡ Performance heuristics
+* 📚 Documentation analysis
+* 🚀 Production readiness assessment
+* 📊 Weighted 0–100 health scoring
+* 📝 Detailed issue explorer
+* 🔎 Severity and category filtering
+* 📄 HTML report generation
+* 📑 PDF report generation
+* 💾 Local SQLite audit history
+* 🛡 ZIP traversal protection
+* 🚫 No uploaded-code execution
+
+---
+
+## 📊 Health Score
+
+DevHealth evaluates projects across seven engineering categories.
+
+| Category             | Weight |
+| -------------------- | -----: |
+| Build Health         |    20% |
+| Security             |    25% |
+| Testing              |    15% |
+| Dependencies         |    15% |
+| Performance          |    10% |
+| Documentation        |    10% |
+| Production Readiness |     5% |
+
+The final score is calculated using the weighted category results.
 
 ```text
-UPLOAD PROJECT / GITHUB URL / SAMPLE
-                 ↓
-      PROJECT TYPE DETECTION
-                 ↓
-    FILE STRUCTURE HIERARCHY
-                 ↓
-          BUILD ANALYSIS
-                 ↓
-         SECURITY AUDIT (Masked Secrets)
-                 ↓
-        TESTING & COVERAGE
-                 ↓
-       DEPENDENCY EVALUATION
-                 ↓
-       PERFORMANCE HEURISTICS
-                 ↓
-       DOCUMENTATION QUALITY
-                 ↓
-       PRODUCTION READINESS
-                 ↓
-        OVERALL HEALTH SCORE
-                 ↓
-   DETAILED REPORT & EXPORT (PDF/HTML)
+Build Health          × 20%
+Security              × 25%
+Testing               × 15%
+Dependencies          × 15%
+Performance           × 10%
+Documentation         × 10%
+Production Readiness  ×  5%
 ```
 
-### Overall Health Formula
+### Health Classification
 
 ```text
-Overall Health =
-    Build               × 20%
-  + Security            × 25%
-  + Testing             × 15%
-  + Dependencies        × 15%
-  + Performance         × 10%
-  + Documentation       × 10%
-  + Production Ready    ×  5%
+80 – 100  → HEALTHY
+65 – 79   → NEEDS ATTENTION
+50 – 64   → AT RISK
+0  – 49   → CRITICAL
 ```
 
-Statuses:
-* `HEALTHY` (80–100)
-* `NEEDS ATTENTION` (65–79)
-* `AT RISK` (50–64)
-* `CRITICAL` (< 50 or multiple critical vulnerabilities)
+---
+
+## 🔐 Security Analysis
+
+DevHealth performs static security inspection across project files.
+
+The analyzer can identify patterns related to:
+
+```text
+Exposed API Keys
+AWS Credentials
+GitHub Tokens
+Stripe Keys
+Google API Keys
+Slack Tokens
+eval()
+os.system()
+subprocess(..., shell=True)
+SQL Query Concatenation
+Wildcard CORS
+Production Debug Configuration
+```
+
+Sensitive values are masked before being displayed in reports.
+
+```text
+sk-****************92ab
+```
+
+The security analyzer is intentionally **static** and does not execute discovered code.
 
 ---
 
-## Features
+## 📦 Project Ingestion
 
-1. **Safe Project Ingestion**:
-   - Drag-and-drop or browse `.zip` archives.
-   - Public GitHub repository downloader (no GitHub tokens required).
-   - In-memory traversal check preventing directory escapes (`../`) and decompression bombs.
-   - Automatically skips `node_modules`, `.git`, `__pycache__`, `dist`, `.venv`, and other build caches.
+Projects can enter DevHealth through three different sources.
 
-2. **Project Type & Language Detection**:
-   - Automatically detects React, Next.js, Vite, Vue, Node.js, FastAPI, Django, Flask, Rust, and Go.
-   - Measures language distribution and primary programming language.
+```text
+             PROJECT INPUT
+                  │
+       ┌──────────┼──────────┐
+       │          │          │
+       ▼          ▼          ▼
+      ZIP      GitHub      Sample
+       │          │          │
+       └──────────┼──────────┘
+                  ▼
+          Project Extraction
+                  │
+                  ▼
+           Structure Analysis
+                  │
+                  ▼
+            Audit Pipeline
+```
 
-3. **File Structure Hierarchy**:
-   - Visual collapsible directory tree.
-   - Large files detector (>200KB).
-   - Suspicious committed files detector (`.env`, private keys, backup `.bak` files).
+### ZIP Analysis
 
-4. **Deep Security Analysis**:
-   - Scans for exposed API keys and secrets (OpenAI, AWS, GitHub PATs, Stripe live keys, Google API, Slack tokens).
-   - **Secret Masking**: All UI previews strictly mask sensitive strings (`sk-****************92ab`).
-   - Flags dangerous patterns: `eval()`, `document.write()`, Python `subprocess(..., shell=True)`, `os.system()`, SQL query string concatenations, debug mode in production, wildcard CORS.
+Uploaded archives are processed safely with:
 
-5. **Build & Dependency Verification**:
-   - Manifest validation (`package.json`, `requirements.txt`, `pyproject.toml`).
-   - Checks for production build and start scripts.
-   - Detects missing lockfiles (`package-lock.json`, `yarn.lock`, etc.).
-   - Flags unpinned version ranges and known deprecated packages (e.g. `request`, `pycrypto`).
-   - Clearly labeled: *Security database: Local/static analysis only*.
+* Directory traversal protection
+* Absolute-path protection
+* File-count limits
+* Extraction-size limits
+* Temporary extraction
+* Ignored build/cache directories
 
-6. **Testing & Performance Metrics**:
-   - Detects test frameworks (pytest, unittest, Jest, Vitest, Mocha, Cypress, Playwright).
-   - Measures source-to-test ratio.
-   - Evaluates client-side oversized script assets, uncompressed images, and loop bottlenecks.
+DevHealth never executes files contained inside uploaded archives.
 
-7. **Production Readiness & Reports**:
-   - Classifies readiness: `PRODUCTION READY`, `READY WITH IMPROVEMENTS`, `NEEDS WORK`, or `NOT READY`.
-   - Issue Explorer with filtering by Severity and Category.
-   - Exportable, print-friendly HTML and PDF reports.
-   - Historical audits stored locally in SQLite (`data/devhealth.db`).
+### GitHub Analysis
+
+Public repositories can be analyzed directly through their GitHub URL.
+
+```text
+GitHub Repository
+        ↓
+Repository Download
+        ↓
+Safe Extraction
+        ↓
+Project Detection
+        ↓
+Static Audit
+        ↓
+Health Report
+```
+
+No GitHub token is required for public repositories.
 
 ---
 
-## Installation & Running Locally
+## 🏗 Analysis Pipeline
 
-### Prerequisites
-* Python 3.10+ (Python 3.11+ recommended)
+```text
+UPLOAD / GITHUB / SAMPLE
+          ↓
+   PROJECT DETECTION
+          ↓
+    FILE STRUCTURE
+          ↓
+     BUILD HEALTH
+          ↓
+      SECURITY
+          ↓
+       TESTING
+          ↓
+    DEPENDENCIES
+          ↓
+    PERFORMANCE
+          ↓
+   DOCUMENTATION
+          ↓
+ PRODUCTION READINESS
+          ↓
+    HEALTH SCORE
+          ↓
+ DETAILED AUDIT REPORT
+```
 
-### Setup
+---
+
+## 🧠 Project Detection
+
+DevHealth automatically identifies project technologies and frameworks based on project files and configuration.
+
+Supported project types include:
+
+```text
+React
+Next.js
+Vite
+Vue
+Node.js
+FastAPI
+Django
+Flask
+Rust
+Go
+```
+
+The analyzer also determines:
+
+* Primary programming language
+* Language distribution
+* Project type
+* Framework indicators
+* Important project configuration files
+
+---
+
+## 🏗 Build Health
+
+The Build analyzer evaluates the project's basic build configuration.
+
+It checks:
+
+* `package.json`
+* `requirements.txt`
+* `pyproject.toml`
+* Build scripts
+* Start scripts
+* Manifest configuration
+* Lockfiles
+* Dependency version ranges
+* Deprecated packages
+
+The goal is to identify configuration problems that could affect project reliability and deployment.
+
+---
+
+## 🧪 Testing Analysis
+
+DevHealth evaluates the project's testing setup.
+
+Supported testing ecosystems include:
+
+```text
+pytest
+unittest
+Jest
+Vitest
+Mocha
+Cypress
+Playwright
+```
+
+The analyzer examines:
+
+* Test framework detection
+* Test file presence
+* Source-to-test ratio
+* Testing configuration
+* Test organization
+
+---
+
+## ⚡ Performance Analysis
+
+The performance analyzer uses static heuristics to identify potential performance problems.
+
+It checks for:
+
+* Large source files
+* Oversized frontend assets
+* Uncompressed images
+* Potential loop bottlenecks
+* Client-side performance concerns
+
+The analysis is designed to highlight areas worth reviewing rather than replace runtime profiling.
+
+---
+
+## 📚 Documentation Analysis
+
+DevHealth evaluates important project documentation.
+
+It checks for:
+
+```text
+README
+LICENSE
+Project Metadata
+Setup Instructions
+Documentation Quality
+```
+
+Documentation contributes directly to the overall project health score.
+
+---
+
+## 🚀 Production Readiness
+
+The production analyzer combines findings from the complete audit pipeline.
+
+Projects are classified as:
+
+```text
+PRODUCTION READY
+        ↓
+READY WITH IMPROVEMENTS
+        ↓
+NEEDS WORK
+        ↓
+NOT READY
+```
+
+The classification considers the project's overall health, security findings, build configuration, testing, dependencies, documentation, and other detected issues.
+
+---
+
+## 📊 Audit Reports
+
+Every completed analysis produces a detailed project report.
+
+Reports include:
+
+* Overall health score
+* Category scores
+* Project information
+* Detected technologies
+* Security findings
+* Build issues
+* Testing results
+* Dependency findings
+* Performance findings
+* Documentation results
+* Production-readiness status
+* Severity levels
+* Affected files
+* Masked code snippets
+* Recommendations
+
+Reports can be exported for further review.
+
+---
+
+## 🗂 Issue Explorer
+
+DevHealth provides an issue explorer for navigating detected problems.
+
+Issues can be filtered by:
+
+```text
+Severity
+    ↓
+Critical
+High
+Medium
+Low
+Info
+
+Category
+    ↓
+Build
+Security
+Testing
+Dependencies
+Performance
+Documentation
+Production
+```
+
+This allows developers to focus on specific areas of the project instead of reviewing the entire audit at once.
+
+---
+
+## 💾 Audit History
+
+Completed audits can be stored locally using SQLite.
+
+```text
+Project Analysis
+       ↓
+Audit Result
+       ↓
+Health Score
+       ↓
+SQLite Storage
+       ↓
+Historical Audit
+```
+
+The application keeps this persistence local rather than requiring an external database service.
+
+---
+
+## 🏗 Architecture
+
+```text
+                         DEVHEALTH
+                            │
+             ┌──────────────┼──────────────┐
+             │              │              │
+             ▼              ▼              ▼
+          ZIP Input      GitHub Input    Samples
+             │              │              │
+             └──────────────┼──────────────┘
+                            │
+                            ▼
+                   Analyzer Service
+                            │
+        ┌───────────────────┼───────────────────┐
+        │         │         │         │          │
+        ▼         ▼         ▼         ▼          ▼
+      Build   Security  Testing  Dependencies Performance
+        │         │         │         │          │
+        └─────────┴─────────┼─────────┴──────────┘
+                            │
+                     Documentation
+                            │
+                            ▼
+                  Production Analyzer
+                            │
+                            ▼
+                      Scoring Engine
+                            │
+                  ┌─────────┴─────────┐
+                  ▼                   ▼
+             Audit Report        SQLite History
+```
+
+---
+
+## 🔄 Application Flow
+
+```text
+Project Input
+      ↓
+Detect Project
+      ↓
+Build Project Tree
+      ↓
+Analyze Build
+      ↓
+Audit Security
+      ↓
+Analyze Testing
+      ↓
+Analyze Dependencies
+      ↓
+Analyze Performance
+      ↓
+Analyze Documentation
+      ↓
+Calculate Production Readiness
+      ↓
+Calculate Overall Score
+      ↓
+Generate Report
+      ↓
+Store Audit History
+```
+
+---
+
+## 🧩 Core Systems
+
+### Project Detector
+
+Responsible for:
+
+* Project type detection
+* Framework detection
+* Language detection
+* Language distribution
+* Project metadata
+
+### Structure Analyzer
+
+Responsible for:
+
+* Directory hierarchy
+* File discovery
+* File counts
+* Large file detection
+* Suspicious file detection
+
+### Security Analyzer
+
+Responsible for:
+
+* Secret detection
+* Credential detection
+* Dangerous pattern detection
+* Security issue classification
+* Secret masking
+
+### Build Analyzer
+
+Responsible for:
+
+* Manifest validation
+* Build scripts
+* Start scripts
+* Lockfiles
+* Dependency configuration
+
+### Testing Analyzer
+
+Responsible for:
+
+* Test framework detection
+* Test file discovery
+* Source-to-test ratio
+* Testing configuration
+
+### Dependency Analyzer
+
+Responsible for:
+
+* Dependency discovery
+* Version analysis
+* Lockfile detection
+* Deprecated dependency detection
+
+### Performance Analyzer
+
+Responsible for:
+
+* Large assets
+* Image analysis
+* File-size heuristics
+* Potential performance bottlenecks
+
+### Production Analyzer
+
+Responsible for:
+
+* Combining audit results
+* Production-readiness classification
+* Critical issue evaluation
+
+### Scoring Engine
+
+Responsible for:
+
+* Category scores
+* Weighted calculations
+* Overall health score
+* Health classification
+
+---
+
+## 📂 Project Structure
+
+```text
+dev-health/
+│
+├── app/
+│   ├── analyzers/
+│   │   ├── build.py
+│   │   ├── dependencies.py
+│   │   ├── documentation.py
+│   │   ├── performance.py
+│   │   ├── production.py
+│   │   ├── project_detector.py
+│   │   ├── security.py
+│   │   ├── structure.py
+│   │   └── testing.py
+│   │
+│   ├── models/
+│   │   └── schemas.py
+│   │
+│   ├── routes/
+│   │   ├── analysis.py
+│   │   └── pages.py
+│   │
+│   ├── services/
+│   │   ├── analyzer_service.py
+│   │   ├── github_service.py
+│   │   └── report_service.py
+│   │
+│   └── utils/
+│       ├── files.py
+│       ├── scoring.py
+│       └── security.py
+│
+├── fixtures/
+│
+├── data/
+│
+├── src/
+│
+├── main.py
+├── requirements.txt
+├── test_analyzer.py
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+├── index.html
+└── README.md
+```
+
+---
+
+## 🛠 Tech Stack
+
+| Technology | Usage                   |
+| ---------- | ----------------------- |
+| React      | Frontend application    |
+| TypeScript | Type-safe development   |
+| Vite       | Frontend build tooling  |
+| Python     | Backend analysis engine |
+| FastAPI    | Backend API             |
+| Uvicorn    | Application server      |
+| Pydantic   | Data validation         |
+| SQLite     | Local audit persistence |
+| HTML / CSS | Interface and reports   |
+| Git        | Version control         |
+| GitHub     | Repository hosting      |
+
+---
+
+## 🔒 Security Model
+
+DevHealth is designed around a **no-code-execution architecture**.
+
+```text
+Uploaded Project
+       ↓
+Read Files
+       ↓
+Inspect Structure
+       ↓
+Static Analysis
+       ↓
+Generate Findings
+```
+
+DevHealth does **not** execute:
+
+* Uploaded applications
+* Build scripts
+* Test suites
+* Server code
+* Shell commands from analyzed projects
+
+### ZIP Protection
+
+```text
+Maximum Extraction Size → 50 MB
+Maximum File Count      → 5,000
+```
+
+Archives are checked before extraction to prevent directory traversal and excessive extraction.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-org/devhealth.git
-cd devhealth
+git clone https://github.com/AbdulRehmanYasir/dev-health.git
+cd dev-health
+```
 
-# Create and activate a virtual environment
+### 2. Create a virtual environment
+
+#### Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+#### Linux / macOS
+
+```bash
 python3 -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
+```
 
-# Install dependencies
+### 3. Install Python dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# Launch the DevHealth server
+### 4. Start the backend
+
+```bash
 python main.py
 ```
 
-Open your browser to:
+The backend will be available at:
+
 ```text
 http://127.0.0.1:8000
 ```
-Interactive API documentation is accessible at `http://127.0.0.1:8000/docs`.
+
+API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 5. Start the frontend
+
+```bash
+npm install
+npm run dev
+```
+
+The frontend will be available at the Vite development URL shown in the terminal.
 
 ---
 
-## Project Structure
+## 🏗 Production Build
 
-```text
-devhealth/
-│
-├── main.py                     # Application entry point (FastAPI + Uvicorn)
-├── requirements.txt            # Python dependencies
-├── test_analyzer.py            # Analyzer verification test suite
-├── README.md                   # Documentation
-│
-├── app/
-│   ├── config.py               # Configurable thresholds, weights, and filters
-│   ├── database.py             # SQLite persistence layer
-│   │
-│   ├── models/
-│   │   └── schemas.py          # Pydantic schemas (with fallback)
-│   │
-│   ├── analyzers/
-│   │   ├── project_detector.py # Framework and language detection
-│   │   ├── structure.py        # File hierarchy and metrics
-│   │   ├── build.py            # Manifest and script auditing
-│   │   ├── security.py         # Static secret & vulnerability scanner
-│   │   ├── testing.py          # Test framework & ratio analysis
-│   │   ├── dependencies.py     # Lockfile & dependency auditing
-│   │   ├── performance.py      # Bundle and algorithmic heuristics
-│   │   ├── documentation.py    # README & LICENSE verification
-│   │   └── production.py       # Production readiness calculation
-│   │
-│   ├── services/
-│   │   ├── analyzer_service.py # Orchestrator pipeline
-│   │   ├── github_service.py   # Public GitHub repository fetcher
-│   │   └── report_service.py   # Print-friendly HTML report generator
-│   │
-│   ├── routes/
-│   │   ├── analysis.py         # Upload, GitHub, and History endpoints
-│   │   └── pages.py            # Template view endpoints
-│   │
-│   └── utils/
-│       ├── security.py         # Safe extraction, secret masking & regex
-│       ├── files.py            # Safe text reading & tree building
-│       └── scoring.py          # Weight calculations & classifications
-│
-├── fixtures/                   # Sample project fixtures for automated testing
-└── data/                       # Local SQLite database directory
+Build the frontend:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
 ```
 
 ---
 
-## Security Model
+## 🧪 Testing
 
-DevHealth enforces strict security guarantees:
+Run the analyzer tests:
 
-1. **NO CODE EXECUTION**: DevHealth never executes uploaded code, tests, build scripts, or server files. All analysis is 100% static AST/regex/file inspection.
-2. **ZIP Traversal Protection**: Archive member paths are normalized; path components containing `..` or absolute paths are rejected.
-3. **Secret Masking**: All discovered credentials are automatically masked before persisting or presenting in the UI (`sk-****************92ab`).
-4. **Local Persistence**: All project audits remain strictly on the local machine in `data/devhealth.db`.
+```bash
+python -m pytest
+```
 
----
+Or:
 
-## Limitations
-
-* **Static Analysis Only**: Does not execute dynamic sandbox tests or run live linters.
-* **Heuristics-Based**: Does not substitute for a formal CVE scanner connected to live threat intelligence APIs.
-* **File Size Ceiling**: Default maximum ZIP extraction is capped at 50MB and 5,000 files for local responsiveness.
+```bash
+python test_analyzer.py
+```
 
 ---
 
-## License
+## 📋 Current Status
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+```text
+Project Detection          ✅
+ZIP Project Analysis       ✅
+GitHub Repository Analysis ✅
+Structure Analysis         ✅
+Build Analysis             ✅
+Security Analysis          ✅
+Secret Masking             ✅
+Testing Analysis           ✅
+Dependency Analysis        ✅
+Performance Analysis       ✅
+Documentation Analysis     ✅
+Production Readiness       ✅
+Health Scoring             ✅
+Issue Explorer             ✅
+HTML Reports               ✅
+PDF Reports                ✅
+SQLite History             ✅
+Responsive Interface       ✅
+```
+
+---
+
+## ⚠️ Limitations
+
+DevHealth is a **static analysis platform** and does not replace a complete production security pipeline.
+
+It does not currently:
+
+```text
+Execute Uploaded Code
+        ✕
+Run Dynamic Security Tests
+        ✕
+Perform Penetration Testing
+        ✕
+Replace Professional Security Audits
+        ✕
+Query Live CVE Databases
+        ✕
+Guarantee Production Security
+        ✕
+```
+
+Findings are based on static inspection and heuristic analysis.
+
+---
+
+## 🎯 Project Goals
+
+DevHealth was built around a simple idea:
+
+```text
+Before Production
+       ↓
+Understand Your Project
+       ↓
+Find Hidden Problems
+       ↓
+Fix Critical Issues
+       ↓
+Improve Project Health
+       ↓
+Ship With Confidence
+```
+
+The goal is to give developers a single place to understand the health of a project across **security, build quality, testing, dependencies, performance, documentation, and production readiness**.
+
+---
+
+## 👨‍💻 Author
+
+<div align="center">
+
+### Abdul Rehman Yasir
+
+**BS Artificial Intelligence Student | Developer**
+
+Building real-world software & AI projects.
+
+[GitHub](https://github.com/AbdulRehmanYasir)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🛡 DEVHEALTH
+
+**Inspect. Analyze. Secure. Ship.**
+
+Built with React + TypeScript + Python + FastAPI.
+
+</div>
