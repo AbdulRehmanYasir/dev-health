@@ -1,0 +1,4163 @@
+Folder PATH listing for volume New Volume
+Volume serial number is B8C8-9589
+E:.
+|   .env.example
+|   .gitignore
+|   bun.lock
+|   index.html
+|   main.py
+|   metadata.json
+|   package.json
+|   project-tree.txt
+|   README.md
+|   requirements.txt
+|   test_analyzer.py
+|   tsconfig.json
+|   vite.config.ts
+|   
++---.venv
+|   |   .gitignore
+|   |   .lock
+|   |   CACHEDIR.TAG
+|   |   pyvenv.cfg
+|   |   
+|   +---Lib
+|   |   \---site-packages
+|   |       |   py.py
+|   |       |   typing_extensions.py
+|   |       |   _virtualenv.pth
+|   |       |   _virtualenv.py
+|   |       |   
+|   |       +---aiofiles
+|   |       |   |   base.py
+|   |       |   |   os.py
+|   |       |   |   ospath.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---tempfile
+|   |       |   |       temptypes.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---threadpool
+|   |       |           binary.py
+|   |       |           text.py
+|   |       |           utils.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---aiofiles-25.1.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           NOTICE
+|   |       |           
+|   |       +---annotated_doc
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           main.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---annotated_doc-0.0.5.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---annotated_types
+|   |       |   |   py.typed
+|   |       |   |   test_cases.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---annotated_types-0.8.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---anyio
+|   |       |   |   from_thread.py
+|   |       |   |   functools.py
+|   |       |   |   itertools.py
+|   |       |   |   lowlevel.py
+|   |       |   |   py.typed
+|   |       |   |   pytest_plugin.py
+|   |       |   |   to_interpreter.py
+|   |       |   |   to_process.py
+|   |       |   |   to_thread.py
+|   |       |   |   _lazyimport.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---abc
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _eventloop.cpython-314.pyc
+|   |       |   |           _resources.cpython-314.pyc
+|   |       |   |           _sockets.cpython-314.pyc
+|   |       |   |           _streams.cpython-314.pyc
+|   |       |   |           _subprocesses.cpython-314.pyc
+|   |       |   |           _tasks.cpython-314.pyc
+|   |       |   |           _testing.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---streams
+|   |       |   |   |   buffered.py
+|   |       |   |   |   file.py
+|   |       |   |   |   memory.py
+|   |       |   |   |   stapled.py
+|   |       |   |   |   text.py
+|   |       |   |   |   tls.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           memory.cpython-314.pyc
+|   |       |   |           stapled.cpython-314.pyc
+|   |       |   |           tls.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_backends
+|   |       |   |   |   _asyncio.py
+|   |       |   |   |   _trio.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _asyncio.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_core
+|   |       |   |   |   _asyncio_selector_thread.py
+|   |       |   |   |   _concurrency_utils.py
+|   |       |   |   |   _contextmanagers.py
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _exceptions.py
+|   |       |   |   |   _fileio.py
+|   |       |   |   |   _futures.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _signals.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _synchronization.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _tempfile.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   _typedattr.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _eventloop.cpython-314.pyc
+|   |       |   |           _exceptions.cpython-314.pyc
+|   |       |   |           _resources.cpython-314.pyc
+|   |       |   |           _sockets.cpython-314.pyc
+|   |       |   |           _streams.cpython-314.pyc
+|   |       |   |           _synchronization.cpython-314.pyc
+|   |       |   |           _tasks.cpython-314.pyc
+|   |       |   |           _testing.cpython-314.pyc
+|   |       |   |           _typedattr.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           from_thread.cpython-314.pyc
+|   |       |           lowlevel.cpython-314.pyc
+|   |       |           to_thread.cpython-314.pyc
+|   |       |           _lazyimport.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---anyio-4.15.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---certifi
+|   |       |   |   cacert.pem
+|   |       |   |   core.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---tests
+|   |       |           test_certify.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---certifi-2026.7.22.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---click
+|   |       |   |   core.py
+|   |       |   |   decorators.py
+|   |       |   |   exceptions.py
+|   |       |   |   formatting.py
+|   |       |   |   globals.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   shell_completion.py
+|   |       |   |   termui.py
+|   |       |   |   testing.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   _compat.py
+|   |       |   |   _termui_impl.py
+|   |       |   |   _textwrap.py
+|   |       |   |   _utils.py
+|   |       |   |   _winconsole.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-314.pyc
+|   |       |           decorators.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           formatting.cpython-314.pyc
+|   |       |           globals.cpython-314.pyc
+|   |       |           parser.cpython-314.pyc
+|   |       |           termui.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           _compat.cpython-314.pyc
+|   |       |           _utils.cpython-314.pyc
+|   |       |           _winconsole.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---click-8.5.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---colorama
+|   |       |   |   ansi.py
+|   |       |   |   ansitowin32.py
+|   |       |   |   initialise.py
+|   |       |   |   win32.py
+|   |       |   |   winterm.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---tests
+|   |       |           ansitowin32_test.py
+|   |       |           ansi_test.py
+|   |       |           initialise_test.py
+|   |       |           isatty_test.py
+|   |       |           utils.py
+|   |       |           winterm_test.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---colorama-0.4.6.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---dotenv
+|   |       |       cli.py
+|   |       |       ipython.py
+|   |       |       main.py
+|   |       |       parser.py
+|   |       |       py.typed
+|   |       |       variables.py
+|   |       |       version.py
+|   |       |       __init__.py
+|   |       |       __main__.py
+|   |       |       
+|   |       +---fastapi
+|   |       |   |   applications.py
+|   |       |   |   background.py
+|   |       |   |   cli.py
+|   |       |   |   concurrency.py
+|   |       |   |   datastructures.py
+|   |       |   |   encoders.py
+|   |       |   |   exceptions.py
+|   |       |   |   exception_handlers.py
+|   |       |   |   logger.py
+|   |       |   |   params.py
+|   |       |   |   param_functions.py
+|   |       |   |   py.typed
+|   |       |   |   requests.py
+|   |       |   |   responses.py
+|   |       |   |   routing.py
+|   |       |   |   sse.py
+|   |       |   |   staticfiles.py
+|   |       |   |   templating.py
+|   |       |   |   testclient.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   websockets.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---.agents
+|   |       |   |   \---skills
+|   |       |   |       \---fastapi
+|   |       |   |           |   SKILL.md
+|   |       |   |           |   
+|   |       |   |           \---references
+|   |       |   |                   dependencies.md
+|   |       |   |                   other-tools.md
+|   |       |   |                   path-operations.md
+|   |       |   |                   pydantic.md
+|   |       |   |                   responses.md
+|   |       |   |                   streaming.md
+|   |       |   |                   
+|   |       |   +---dependencies
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           models.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   asyncexitstack.py
+|   |       |   |   |   cors.py
+|   |       |   |   |   gzip.py
+|   |       |   |   |   httpsredirect.py
+|   |       |   |   |   trustedhost.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asyncexitstack.cpython-314.pyc
+|   |       |   |           cors.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---openapi
+|   |       |   |   |   constants.py
+|   |       |   |   |   docs.py
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           constants.cpython-314.pyc
+|   |       |   |           docs.cpython-314.pyc
+|   |       |   |           models.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---security
+|   |       |   |   |   api_key.py
+|   |       |   |   |   base.py
+|   |       |   |   |   http.py
+|   |       |   |   |   oauth2.py
+|   |       |   |   |   open_id_connect_url.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           api_key.cpython-314.pyc
+|   |       |   |           base.cpython-314.pyc
+|   |       |   |           http.cpython-314.pyc
+|   |       |   |           oauth2.cpython-314.pyc
+|   |       |   |           open_id_connect_url.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_compat
+|   |       |   |   |   shared.py
+|   |       |   |   |   v2.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           shared.cpython-314.pyc
+|   |       |   |           v2.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           applications.cpython-314.pyc
+|   |       |           background.cpython-314.pyc
+|   |       |           concurrency.cpython-314.pyc
+|   |       |           datastructures.cpython-314.pyc
+|   |       |           encoders.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           exception_handlers.cpython-314.pyc
+|   |       |           logger.cpython-314.pyc
+|   |       |           params.cpython-314.pyc
+|   |       |           param_functions.cpython-314.pyc
+|   |       |           requests.cpython-314.pyc
+|   |       |           responses.cpython-314.pyc
+|   |       |           routing.cpython-314.pyc
+|   |       |           sse.cpython-314.pyc
+|   |       |           staticfiles.cpython-314.pyc
+|   |       |           templating.cpython-314.pyc
+|   |       |           testclient.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           websockets.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---fastapi-0.141.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---h11
+|   |       |       py.typed
+|   |       |       _abnf.py
+|   |       |       _connection.py
+|   |       |       _events.py
+|   |       |       _headers.py
+|   |       |       _readers.py
+|   |       |       _receivebuffer.py
+|   |       |       _state.py
+|   |       |       _util.py
+|   |       |       _version.py
+|   |       |       _writers.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---h11-0.16.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---httpcore
+|   |       |   |   py.typed
+|   |       |   |   _api.py
+|   |       |   |   _exceptions.py
+|   |       |   |   _models.py
+|   |       |   |   _ssl.py
+|   |       |   |   _synchronization.py
+|   |       |   |   _trace.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---_async
+|   |       |   |       connection.py
+|   |       |   |       connection_pool.py
+|   |       |   |       http11.py
+|   |       |   |       http2.py
+|   |       |   |       http_proxy.py
+|   |       |   |       interfaces.py
+|   |       |   |       socks_proxy.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_backends
+|   |       |   |       anyio.py
+|   |       |   |       auto.py
+|   |       |   |       base.py
+|   |       |   |       mock.py
+|   |       |   |       sync.py
+|   |       |   |       trio.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---_sync
+|   |       |           connection.py
+|   |       |           connection_pool.py
+|   |       |           http11.py
+|   |       |           http2.py
+|   |       |           http_proxy.py
+|   |       |           interfaces.py
+|   |       |           socks_proxy.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---httpcore-1.0.9.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---httptools
+|   |       |   |   py.typed
+|   |       |   |   _version.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---parser
+|   |       |   |   |   cparser.pxd
+|   |       |   |   |   errors.py
+|   |       |   |   |   parser.cp314-win_amd64.pyd
+|   |       |   |   |   parser.pyi
+|   |       |   |   |   parser.pyx
+|   |       |   |   |   protocol.py
+|   |       |   |   |   python.pxd
+|   |       |   |   |   url_cparser.pxd
+|   |       |   |   |   url_parser.cp314-win_amd64.pyd
+|   |       |   |   |   url_parser.pyi
+|   |       |   |   |   url_parser.pyx
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           errors.cpython-314.pyc
+|   |       |   |           protocol.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           _version.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---httptools-0.8.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |       |   LICENSE
+|   |       |       |   
+|   |       |       \---vendor
+|   |       |           +---http-parser
+|   |       |           |       LICENSE-MIT
+|   |       |           |       
+|   |       |           \---llhttp
+|   |       |                   LICENSE
+|   |       |                   
+|   |       +---httpx
+|   |       |   |   py.typed
+|   |       |   |   _api.py
+|   |       |   |   _auth.py
+|   |       |   |   _client.py
+|   |       |   |   _config.py
+|   |       |   |   _content.py
+|   |       |   |   _decoders.py
+|   |       |   |   _exceptions.py
+|   |       |   |   _main.py
+|   |       |   |   _models.py
+|   |       |   |   _multipart.py
+|   |       |   |   _status_codes.py
+|   |       |   |   _types.py
+|   |       |   |   _urlparse.py
+|   |       |   |   _urls.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   __version__.py
+|   |       |   |   
+|   |       |   +---_transports
+|   |       |   |   |   asgi.py
+|   |       |   |   |   base.py
+|   |       |   |   |   default.py
+|   |       |   |   |   mock.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asgi.cpython-314.pyc
+|   |       |   |           base.cpython-314.pyc
+|   |       |   |           default.cpython-314.pyc
+|   |       |   |           mock.cpython-314.pyc
+|   |       |   |           wsgi.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           _api.cpython-314.pyc
+|   |       |           _auth.cpython-314.pyc
+|   |       |           _client.cpython-314.pyc
+|   |       |           _config.cpython-314.pyc
+|   |       |           _content.cpython-314.pyc
+|   |       |           _decoders.cpython-314.pyc
+|   |       |           _exceptions.cpython-314.pyc
+|   |       |           _main.cpython-314.pyc
+|   |       |           _models.cpython-314.pyc
+|   |       |           _multipart.cpython-314.pyc
+|   |       |           _status_codes.cpython-314.pyc
+|   |       |           _types.cpython-314.pyc
+|   |       |           _urlparse.cpython-314.pyc
+|   |       |           _urls.cpython-314.pyc
+|   |       |           _utils.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           __version__.cpython-314.pyc
+|   |       |           
+|   |       +---httpx-0.28.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---idna
+|   |       |   |   cli.py
+|   |       |   |   codec.py
+|   |       |   |   compat.py
+|   |       |   |   core.py
+|   |       |   |   idnadata.py
+|   |       |   |   intranges.py
+|   |       |   |   package_data.py
+|   |       |   |   py.typed
+|   |       |   |   uts46data.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-314.pyc
+|   |       |           idnadata.cpython-314.pyc
+|   |       |           intranges.cpython-314.pyc
+|   |       |           package_data.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---idna-3.19.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---iniconfig
+|   |       |       exceptions.py
+|   |       |       py.typed
+|   |       |       _parse.py
+|   |       |       _version.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---iniconfig-2.3.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---jinja2
+|   |       |   |   async_utils.py
+|   |       |   |   bccache.py
+|   |       |   |   compiler.py
+|   |       |   |   constants.py
+|   |       |   |   debug.py
+|   |       |   |   defaults.py
+|   |       |   |   environment.py
+|   |       |   |   exceptions.py
+|   |       |   |   ext.py
+|   |       |   |   filters.py
+|   |       |   |   idtracking.py
+|   |       |   |   lexer.py
+|   |       |   |   loaders.py
+|   |       |   |   meta.py
+|   |       |   |   nativetypes.py
+|   |       |   |   nodes.py
+|   |       |   |   optimizer.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   runtime.py
+|   |       |   |   sandbox.py
+|   |       |   |   tests.py
+|   |       |   |   utils.py
+|   |       |   |   visitor.py
+|   |       |   |   _identifier.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           async_utils.cpython-314.pyc
+|   |       |           bccache.cpython-314.pyc
+|   |       |           compiler.cpython-314.pyc
+|   |       |           defaults.cpython-314.pyc
+|   |       |           environment.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           filters.cpython-314.pyc
+|   |       |           idtracking.cpython-314.pyc
+|   |       |           lexer.cpython-314.pyc
+|   |       |           loaders.cpython-314.pyc
+|   |       |           nodes.cpython-314.pyc
+|   |       |           optimizer.cpython-314.pyc
+|   |       |           parser.cpython-314.pyc
+|   |       |           runtime.cpython-314.pyc
+|   |       |           tests.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           visitor.cpython-314.pyc
+|   |       |           _identifier.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---jinja2-3.1.6.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---markupsafe
+|   |       |   |   py.typed
+|   |       |   |   _native.py
+|   |       |   |   _speedups.c
+|   |       |   |   _speedups.cp314-win_amd64.pyd
+|   |       |   |   _speedups.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---markupsafe-3.0.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---multipart
+|   |       |       decoders.py
+|   |       |       exceptions.py
+|   |       |       multipart.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---packaging
+|   |       |   |   dependency_groups.py
+|   |       |   |   direct_url.py
+|   |       |   |   errors.py
+|   |       |   |   markers.py
+|   |       |   |   metadata.py
+|   |       |   |   py.typed
+|   |       |   |   pylock.py
+|   |       |   |   ranges.py
+|   |       |   |   requirements.py
+|   |       |   |   specifiers.py
+|   |       |   |   tags.py
+|   |       |   |   utils.py
+|   |       |   |   version.py
+|   |       |   |   _elffile.py
+|   |       |   |   _manylinux.py
+|   |       |   |   _musllinux.py
+|   |       |   |   _parser.py
+|   |       |   |   _ranges.py
+|   |       |   |   _structures.py
+|   |       |   |   _tokenizer.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           _spdx.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---packaging-26.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           LICENSE.APACHE
+|   |       |           LICENSE.BSD
+|   |       |           
+|   |       +---pluggy
+|   |       |       py.typed
+|   |       |       _callers.py
+|   |       |       _hooks.py
+|   |       |       _manager.py
+|   |       |       _result.py
+|   |       |       _tracing.py
+|   |       |       _version.py
+|   |       |       _warnings.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---pluggy-1.6.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pydantic
+|   |       |   |   aliases.py
+|   |       |   |   alias_generators.py
+|   |       |   |   annotated_handlers.py
+|   |       |   |   class_validators.py
+|   |       |   |   color.py
+|   |       |   |   config.py
+|   |       |   |   dataclasses.py
+|   |       |   |   datetime_parse.py
+|   |       |   |   decorator.py
+|   |       |   |   env_settings.py
+|   |       |   |   errors.py
+|   |       |   |   error_wrappers.py
+|   |       |   |   fields.py
+|   |       |   |   functional_serializers.py
+|   |       |   |   functional_validators.py
+|   |       |   |   generics.py
+|   |       |   |   json.py
+|   |       |   |   json_schema.py
+|   |       |   |   main.py
+|   |       |   |   mypy.py
+|   |       |   |   networks.py
+|   |       |   |   parse.py
+|   |       |   |   py.typed
+|   |       |   |   root_model.py
+|   |       |   |   schema.py
+|   |       |   |   tools.py
+|   |       |   |   types.py
+|   |       |   |   type_adapter.py
+|   |       |   |   typing.py
+|   |       |   |   utils.py
+|   |       |   |   validate_call_decorator.py
+|   |       |   |   validators.py
+|   |       |   |   version.py
+|   |       |   |   warnings.py
+|   |       |   |   _migration.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---deprecated
+|   |       |   |       class_validators.py
+|   |       |   |       config.py
+|   |       |   |       copy_internals.py
+|   |       |   |       decorator.py
+|   |       |   |       json.py
+|   |       |   |       parse.py
+|   |       |   |       tools.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---experimental
+|   |       |   |       arguments_schema.py
+|   |       |   |       missing_sentinel.py
+|   |       |   |       pipeline.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---plugin
+|   |       |   |   |   _loader.py
+|   |       |   |   |   _schema_validator.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _loader.cpython-314.pyc
+|   |       |   |           _schema_validator.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---v1
+|   |       |   |   |   annotated_types.py
+|   |       |   |   |   class_validators.py
+|   |       |   |   |   color.py
+|   |       |   |   |   config.py
+|   |       |   |   |   dataclasses.py
+|   |       |   |   |   datetime_parse.py
+|   |       |   |   |   decorator.py
+|   |       |   |   |   env_settings.py
+|   |       |   |   |   errors.py
+|   |       |   |   |   error_wrappers.py
+|   |       |   |   |   fields.py
+|   |       |   |   |   generics.py
+|   |       |   |   |   json.py
+|   |       |   |   |   main.py
+|   |       |   |   |   mypy.py
+|   |       |   |   |   networks.py
+|   |       |   |   |   parse.py
+|   |       |   |   |   py.typed
+|   |       |   |   |   schema.py
+|   |       |   |   |   tools.py
+|   |       |   |   |   types.py
+|   |       |   |   |   typing.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   validators.py
+|   |       |   |   |   version.py
+|   |       |   |   |   _hypothesis_plugin.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           annotated_types.cpython-314.pyc
+|   |       |   |           class_validators.cpython-314.pyc
+|   |       |   |           color.cpython-314.pyc
+|   |       |   |           config.cpython-314.pyc
+|   |       |   |           dataclasses.cpython-314.pyc
+|   |       |   |           datetime_parse.cpython-314.pyc
+|   |       |   |           decorator.cpython-314.pyc
+|   |       |   |           env_settings.cpython-314.pyc
+|   |       |   |           errors.cpython-314.pyc
+|   |       |   |           error_wrappers.cpython-314.pyc
+|   |       |   |           fields.cpython-314.pyc
+|   |       |   |           json.cpython-314.pyc
+|   |       |   |           main.cpython-314.pyc
+|   |       |   |           networks.cpython-314.pyc
+|   |       |   |           parse.cpython-314.pyc
+|   |       |   |           schema.cpython-314.pyc
+|   |       |   |           tools.cpython-314.pyc
+|   |       |   |           types.cpython-314.pyc
+|   |       |   |           typing.cpython-314.pyc
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           validators.cpython-314.pyc
+|   |       |   |           version.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---_internal
+|   |       |   |   |   _config.py
+|   |       |   |   |   _core_metadata.py
+|   |       |   |   |   _core_utils.py
+|   |       |   |   |   _dataclasses.py
+|   |       |   |   |   _decorators.py
+|   |       |   |   |   _decorators_v1.py
+|   |       |   |   |   _discriminated_union.py
+|   |       |   |   |   _docs_extraction.py
+|   |       |   |   |   _fields.py
+|   |       |   |   |   _forward_ref.py
+|   |       |   |   |   _generate_schema.py
+|   |       |   |   |   _generics.py
+|   |       |   |   |   _git.py
+|   |       |   |   |   _import_utils.py
+|   |       |   |   |   _internal_dataclass.py
+|   |       |   |   |   _known_annotated_metadata.py
+|   |       |   |   |   _mock_val_ser.py
+|   |       |   |   |   _model_construction.py
+|   |       |   |   |   _namespace_utils.py
+|   |       |   |   |   _repr.py
+|   |       |   |   |   _schema_gather.py
+|   |       |   |   |   _schema_generation_shared.py
+|   |       |   |   |   _serializers.py
+|   |       |   |   |   _signature.py
+|   |       |   |   |   _typing_extra.py
+|   |       |   |   |   _utils.py
+|   |       |   |   |   _validate_call.py
+|   |       |   |   |   _validators.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _config.cpython-314.pyc
+|   |       |   |           _core_metadata.cpython-314.pyc
+|   |       |   |           _core_utils.cpython-314.pyc
+|   |       |   |           _decorators.cpython-314.pyc
+|   |       |   |           _discriminated_union.cpython-314.pyc
+|   |       |   |           _docs_extraction.cpython-314.pyc
+|   |       |   |           _fields.cpython-314.pyc
+|   |       |   |           _forward_ref.cpython-314.pyc
+|   |       |   |           _generate_schema.cpython-314.pyc
+|   |       |   |           _generics.cpython-314.pyc
+|   |       |   |           _import_utils.cpython-314.pyc
+|   |       |   |           _internal_dataclass.cpython-314.pyc
+|   |       |   |           _known_annotated_metadata.cpython-314.pyc
+|   |       |   |           _mock_val_ser.cpython-314.pyc
+|   |       |   |           _model_construction.cpython-314.pyc
+|   |       |   |           _namespace_utils.cpython-314.pyc
+|   |       |   |           _repr.cpython-314.pyc
+|   |       |   |           _schema_gather.cpython-314.pyc
+|   |       |   |           _schema_generation_shared.cpython-314.pyc
+|   |       |   |           _signature.cpython-314.pyc
+|   |       |   |           _typing_extra.cpython-314.pyc
+|   |       |   |           _utils.cpython-314.pyc
+|   |       |   |           _validators.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           aliases.cpython-314.pyc
+|   |       |           annotated_handlers.cpython-314.pyc
+|   |       |           color.cpython-314.pyc
+|   |       |           config.cpython-314.pyc
+|   |       |           errors.cpython-314.pyc
+|   |       |           fields.cpython-314.pyc
+|   |       |           functional_validators.cpython-314.pyc
+|   |       |           json_schema.cpython-314.pyc
+|   |       |           main.cpython-314.pyc
+|   |       |           networks.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           type_adapter.cpython-314.pyc
+|   |       |           version.cpython-314.pyc
+|   |       |           warnings.cpython-314.pyc
+|   |       |           _migration.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---pydantic-2.13.5.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pydantic_core
+|   |       |   |   core_schema.py
+|   |       |   |   py.typed
+|   |       |   |   _pydantic_core.cp314-win_amd64.pyd
+|   |       |   |   _pydantic_core.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core_schema.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---pydantic_core-2.46.5.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   +---licenses
+|   |       |   |       LICENSE
+|   |       |   |       
+|   |       |   \---sboms
+|   |       |           pydantic-core.cyclonedx.json
+|   |       |           
+|   |       +---pygments
+|   |       |   |   cmdline.py
+|   |       |   |   console.py
+|   |       |   |   filter.py
+|   |       |   |   formatter.py
+|   |       |   |   lexer.py
+|   |       |   |   modeline.py
+|   |       |   |   plugin.py
+|   |       |   |   regexopt.py
+|   |       |   |   scanner.py
+|   |       |   |   sphinxext.py
+|   |       |   |   style.py
+|   |       |   |   token.py
+|   |       |   |   unistring.py
+|   |       |   |   util.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---filters
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---formatters
+|   |       |   |       bbcode.py
+|   |       |   |       groff.py
+|   |       |   |       html.py
+|   |       |   |       img.py
+|   |       |   |       irc.py
+|   |       |   |       latex.py
+|   |       |   |       other.py
+|   |       |   |       pangomarkup.py
+|   |       |   |       rtf.py
+|   |       |   |       svg.py
+|   |       |   |       terminal.py
+|   |       |   |       terminal256.py
+|   |       |   |       _mapping.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---lexers
+|   |       |   |   |   actionscript.py
+|   |       |   |   |   ada.py
+|   |       |   |   |   agile.py
+|   |       |   |   |   algebra.py
+|   |       |   |   |   ambient.py
+|   |       |   |   |   amdgpu.py
+|   |       |   |   |   ampl.py
+|   |       |   |   |   apdlexer.py
+|   |       |   |   |   apl.py
+|   |       |   |   |   archetype.py
+|   |       |   |   |   arrow.py
+|   |       |   |   |   arturo.py
+|   |       |   |   |   asc.py
+|   |       |   |   |   asm.py
+|   |       |   |   |   asn1.py
+|   |       |   |   |   automation.py
+|   |       |   |   |   bare.py
+|   |       |   |   |   basic.py
+|   |       |   |   |   bdd.py
+|   |       |   |   |   berry.py
+|   |       |   |   |   bibtex.py
+|   |       |   |   |   bitbake.py
+|   |       |   |   |   blueprint.py
+|   |       |   |   |   boa.py
+|   |       |   |   |   bqn.py
+|   |       |   |   |   business.py
+|   |       |   |   |   capnproto.py
+|   |       |   |   |   carbon.py
+|   |       |   |   |   cddl.py
+|   |       |   |   |   cel.py
+|   |       |   |   |   chapel.py
+|   |       |   |   |   clean.py
+|   |       |   |   |   codeql.py
+|   |       |   |   |   comal.py
+|   |       |   |   |   compiled.py
+|   |       |   |   |   configs.py
+|   |       |   |   |   console.py
+|   |       |   |   |   cplint.py
+|   |       |   |   |   crystal.py
+|   |       |   |   |   csound.py
+|   |       |   |   |   css.py
+|   |       |   |   |   c_cpp.py
+|   |       |   |   |   c_like.py
+|   |       |   |   |   d.py
+|   |       |   |   |   dalvik.py
+|   |       |   |   |   data.py
+|   |       |   |   |   dax.py
+|   |       |   |   |   devicetree.py
+|   |       |   |   |   diff.py
+|   |       |   |   |   dns.py
+|   |       |   |   |   dotnet.py
+|   |       |   |   |   dsls.py
+|   |       |   |   |   dylan.py
+|   |       |   |   |   ecl.py
+|   |       |   |   |   eiffel.py
+|   |       |   |   |   elm.py
+|   |       |   |   |   elpi.py
+|   |       |   |   |   email.py
+|   |       |   |   |   erlang.py
+|   |       |   |   |   esoteric.py
+|   |       |   |   |   ezhil.py
+|   |       |   |   |   factor.py
+|   |       |   |   |   fantom.py
+|   |       |   |   |   felix.py
+|   |       |   |   |   fift.py
+|   |       |   |   |   floscript.py
+|   |       |   |   |   forth.py
+|   |       |   |   |   fortran.py
+|   |       |   |   |   foxpro.py
+|   |       |   |   |   freefem.py
+|   |       |   |   |   func.py
+|   |       |   |   |   functional.py
+|   |       |   |   |   futhark.py
+|   |       |   |   |   gcodelexer.py
+|   |       |   |   |   gdscript.py
+|   |       |   |   |   gleam.py
+|   |       |   |   |   go.py
+|   |       |   |   |   grammar_notation.py
+|   |       |   |   |   graph.py
+|   |       |   |   |   graphics.py
+|   |       |   |   |   graphql.py
+|   |       |   |   |   graphviz.py
+|   |       |   |   |   gsql.py
+|   |       |   |   |   hare.py
+|   |       |   |   |   haskell.py
+|   |       |   |   |   haxe.py
+|   |       |   |   |   hdl.py
+|   |       |   |   |   hexdump.py
+|   |       |   |   |   html.py
+|   |       |   |   |   idl.py
+|   |       |   |   |   igor.py
+|   |       |   |   |   inferno.py
+|   |       |   |   |   installers.py
+|   |       |   |   |   int_fiction.py
+|   |       |   |   |   iolang.py
+|   |       |   |   |   j.py
+|   |       |   |   |   javascript.py
+|   |       |   |   |   jmespath.py
+|   |       |   |   |   jslt.py
+|   |       |   |   |   json5.py
+|   |       |   |   |   jsonnet.py
+|   |       |   |   |   jsx.py
+|   |       |   |   |   julia.py
+|   |       |   |   |   jvm.py
+|   |       |   |   |   kuin.py
+|   |       |   |   |   kusto.py
+|   |       |   |   |   ldap.py
+|   |       |   |   |   lean.py
+|   |       |   |   |   lilypond.py
+|   |       |   |   |   lisp.py
+|   |       |   |   |   macaulay2.py
+|   |       |   |   |   make.py
+|   |       |   |   |   maple.py
+|   |       |   |   |   markup.py
+|   |       |   |   |   math.py
+|   |       |   |   |   matlab.py
+|   |       |   |   |   maxima.py
+|   |       |   |   |   meson.py
+|   |       |   |   |   mime.py
+|   |       |   |   |   minecraft.py
+|   |       |   |   |   mips.py
+|   |       |   |   |   ml.py
+|   |       |   |   |   modeling.py
+|   |       |   |   |   modula2.py
+|   |       |   |   |   mojo.py
+|   |       |   |   |   monte.py
+|   |       |   |   |   mosel.py
+|   |       |   |   |   ncl.py
+|   |       |   |   |   nimrod.py
+|   |       |   |   |   nit.py
+|   |       |   |   |   nix.py
+|   |       |   |   |   numbair.py
+|   |       |   |   |   oberon.py
+|   |       |   |   |   objective.py
+|   |       |   |   |   ooc.py
+|   |       |   |   |   openscad.py
+|   |       |   |   |   other.py
+|   |       |   |   |   parasail.py
+|   |       |   |   |   parsers.py
+|   |       |   |   |   pascal.py
+|   |       |   |   |   pawn.py
+|   |       |   |   |   pddl.py
+|   |       |   |   |   perl.py
+|   |       |   |   |   phix.py
+|   |       |   |   |   php.py
+|   |       |   |   |   pointless.py
+|   |       |   |   |   pony.py
+|   |       |   |   |   praat.py
+|   |       |   |   |   procfile.py
+|   |       |   |   |   prolog.py
+|   |       |   |   |   promql.py
+|   |       |   |   |   prql.py
+|   |       |   |   |   ptx.py
+|   |       |   |   |   purescript.py
+|   |       |   |   |   python.py
+|   |       |   |   |   q.py
+|   |       |   |   |   qlik.py
+|   |       |   |   |   qvt.py
+|   |       |   |   |   r.py
+|   |       |   |   |   rdf.py
+|   |       |   |   |   rebol.py
+|   |       |   |   |   rego.py
+|   |       |   |   |   rell.py
+|   |       |   |   |   resource.py
+|   |       |   |   |   ride.py
+|   |       |   |   |   rita.py
+|   |       |   |   |   rnc.py
+|   |       |   |   |   roboconf.py
+|   |       |   |   |   robotframework.py
+|   |       |   |   |   ruby.py
+|   |       |   |   |   rust.py
+|   |       |   |   |   sas.py
+|   |       |   |   |   savi.py
+|   |       |   |   |   scdoc.py
+|   |       |   |   |   scripting.py
+|   |       |   |   |   sgf.py
+|   |       |   |   |   shell.py
+|   |       |   |   |   sieve.py
+|   |       |   |   |   slash.py
+|   |       |   |   |   smalltalk.py
+|   |       |   |   |   smithy.py
+|   |       |   |   |   smv.py
+|   |       |   |   |   snobol.py
+|   |       |   |   |   solidity.py
+|   |       |   |   |   soong.py
+|   |       |   |   |   sophia.py
+|   |       |   |   |   special.py
+|   |       |   |   |   spice.py
+|   |       |   |   |   sql.py
+|   |       |   |   |   srcinfo.py
+|   |       |   |   |   stata.py
+|   |       |   |   |   supercollider.py
+|   |       |   |   |   tablegen.py
+|   |       |   |   |   tact.py
+|   |       |   |   |   tal.py
+|   |       |   |   |   tcl.py
+|   |       |   |   |   teal.py
+|   |       |   |   |   templates.py
+|   |       |   |   |   teraterm.py
+|   |       |   |   |   testing.py
+|   |       |   |   |   text.py
+|   |       |   |   |   textedit.py
+|   |       |   |   |   textfmts.py
+|   |       |   |   |   theorem.py
+|   |       |   |   |   thingsdb.py
+|   |       |   |   |   tlb.py
+|   |       |   |   |   tls.py
+|   |       |   |   |   tnt.py
+|   |       |   |   |   trafficscript.py
+|   |       |   |   |   typoscript.py
+|   |       |   |   |   typst.py
+|   |       |   |   |   ul4.py
+|   |       |   |   |   unicon.py
+|   |       |   |   |   urbi.py
+|   |       |   |   |   usd.py
+|   |       |   |   |   varnish.py
+|   |       |   |   |   verification.py
+|   |       |   |   |   verifpal.py
+|   |       |   |   |   vip.py
+|   |       |   |   |   vyper.py
+|   |       |   |   |   web.py
+|   |       |   |   |   webassembly.py
+|   |       |   |   |   webidl.py
+|   |       |   |   |   webmisc.py
+|   |       |   |   |   wgsl.py
+|   |       |   |   |   whiley.py
+|   |       |   |   |   wowtoc.py
+|   |       |   |   |   wren.py
+|   |       |   |   |   x10.py
+|   |       |   |   |   xorg.py
+|   |       |   |   |   yang.py
+|   |       |   |   |   yara.py
+|   |       |   |   |   zig.py
+|   |       |   |   |   _ada_builtins.py
+|   |       |   |   |   _asy_builtins.py
+|   |       |   |   |   _cl_builtins.py
+|   |       |   |   |   _cocoa_builtins.py
+|   |       |   |   |   _csound_builtins.py
+|   |       |   |   |   _css_builtins.py
+|   |       |   |   |   _googlesql_builtins.py
+|   |       |   |   |   _julia_builtins.py
+|   |       |   |   |   _lasso_builtins.py
+|   |       |   |   |   _lilypond_builtins.py
+|   |       |   |   |   _luau_builtins.py
+|   |       |   |   |   _lua_builtins.py
+|   |       |   |   |   _mapping.py
+|   |       |   |   |   _mql_builtins.py
+|   |       |   |   |   _mysql_builtins.py
+|   |       |   |   |   _openedge_builtins.py
+|   |       |   |   |   _php_builtins.py
+|   |       |   |   |   _postgres_builtins.py
+|   |       |   |   |   _qlik_builtins.py
+|   |       |   |   |   _scheme_builtins.py
+|   |       |   |   |   _scilab_builtins.py
+|   |       |   |   |   _sourcemod_builtins.py
+|   |       |   |   |   _sql_builtins.py
+|   |       |   |   |   _stan_builtins.py
+|   |       |   |   |   _stata_builtins.py
+|   |       |   |   |   _tsql_builtins.py
+|   |       |   |   |   _usd_builtins.py
+|   |       |   |   |   _vbscript_builtins.py
+|   |       |   |   |   _vim_builtins.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _mapping.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---styles
+|   |       |   |       abap.py
+|   |       |   |       algol.py
+|   |       |   |       algol_nu.py
+|   |       |   |       arduino.py
+|   |       |   |       autumn.py
+|   |       |   |       borland.py
+|   |       |   |       bw.py
+|   |       |   |       coffee.py
+|   |       |   |       colorful.py
+|   |       |   |       default.py
+|   |       |   |       dracula.py
+|   |       |   |       emacs.py
+|   |       |   |       friendly.py
+|   |       |   |       friendly_grayscale.py
+|   |       |   |       fruity.py
+|   |       |   |       gh_dark.py
+|   |       |   |       gruvbox.py
+|   |       |   |       igor.py
+|   |       |   |       inkpot.py
+|   |       |   |       lightbulb.py
+|   |       |   |       lilypond.py
+|   |       |   |       lovelace.py
+|   |       |   |       manni.py
+|   |       |   |       material.py
+|   |       |   |       monokai.py
+|   |       |   |       murphy.py
+|   |       |   |       native.py
+|   |       |   |       night_owl.py
+|   |       |   |       nord.py
+|   |       |   |       onedark.py
+|   |       |   |       paraiso_dark.py
+|   |       |   |       paraiso_light.py
+|   |       |   |       pastie.py
+|   |       |   |       perldoc.py
+|   |       |   |       rainbow_dash.py
+|   |       |   |       rrt.py
+|   |       |   |       sas.py
+|   |       |   |       solarized.py
+|   |       |   |       staroffice.py
+|   |       |   |       stata_dark.py
+|   |       |   |       stata_light.py
+|   |       |   |       tango.py
+|   |       |   |       trac.py
+|   |       |   |       vim.py
+|   |       |   |       vs.py
+|   |       |   |       xcode.py
+|   |       |   |       zenburn.py
+|   |       |   |       _mapping.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---__pycache__
+|   |       |           modeline.cpython-314.pyc
+|   |       |           plugin.cpython-314.pyc
+|   |       |           util.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---pygments-2.21.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           AUTHORS
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pytest
+|   |       |       py.typed
+|   |       |       __init__.py
+|   |       |       __main__.py
+|   |       |       
+|   |       +---pytest-9.1.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---python_dotenv-1.2.3.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---python_multipart
+|   |       |   |   decoders.py
+|   |       |   |   exceptions.py
+|   |       |   |   multipart.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           decoders.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           multipart.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---python_multipart-0.0.32.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---pyyaml-6.0.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---starlette
+|   |       |   |   applications.py
+|   |       |   |   authentication.py
+|   |       |   |   background.py
+|   |       |   |   concurrency.py
+|   |       |   |   config.py
+|   |       |   |   convertors.py
+|   |       |   |   datastructures.py
+|   |       |   |   endpoints.py
+|   |       |   |   exceptions.py
+|   |       |   |   formparsers.py
+|   |       |   |   py.typed
+|   |       |   |   requests.py
+|   |       |   |   responses.py
+|   |       |   |   routing.py
+|   |       |   |   schemas.py
+|   |       |   |   staticfiles.py
+|   |       |   |   status.py
+|   |       |   |   templating.py
+|   |       |   |   testclient.py
+|   |       |   |   types.py
+|   |       |   |   websockets.py
+|   |       |   |   _exception_handler.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---middleware
+|   |       |   |   |   authentication.py
+|   |       |   |   |   base.py
+|   |       |   |   |   body_limit.py
+|   |       |   |   |   cors.py
+|   |       |   |   |   errors.py
+|   |       |   |   |   exceptions.py
+|   |       |   |   |   gzip.py
+|   |       |   |   |   httpsredirect.py
+|   |       |   |   |   sessions.py
+|   |       |   |   |   trustedhost.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           base.cpython-314.pyc
+|   |       |   |           body_limit.cpython-314.pyc
+|   |       |   |           cors.cpython-314.pyc
+|   |       |   |           errors.cpython-314.pyc
+|   |       |   |           exceptions.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           applications.cpython-314.pyc
+|   |       |           background.cpython-314.pyc
+|   |       |           concurrency.cpython-314.pyc
+|   |       |           convertors.cpython-314.pyc
+|   |       |           datastructures.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           formparsers.cpython-314.pyc
+|   |       |           requests.cpython-314.pyc
+|   |       |           responses.cpython-314.pyc
+|   |       |           routing.cpython-314.pyc
+|   |       |           staticfiles.cpython-314.pyc
+|   |       |           status.cpython-314.pyc
+|   |       |           templating.cpython-314.pyc
+|   |       |           testclient.cpython-314.pyc
+|   |       |           types.cpython-314.pyc
+|   |       |           websockets.cpython-314.pyc
+|   |       |           _exception_handler.cpython-314.pyc
+|   |       |           _utils.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---starlette-1.6.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---typing_extensions-4.16.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---typing_inspection
+|   |       |   |   introspection.py
+|   |       |   |   py.typed
+|   |       |   |   typing_objects.py
+|   |       |   |   typing_objects.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           introspection.cpython-314.pyc
+|   |       |           typing_objects.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---typing_inspection-0.4.4.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---uvicorn
+|   |       |   |   config.py
+|   |       |   |   importer.py
+|   |       |   |   logging.py
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   server.py
+|   |       |   |   workers.py
+|   |       |   |   _ansi.py
+|   |       |   |   _compat.py
+|   |       |   |   _subprocess.py
+|   |       |   |   _types.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---lifespan
+|   |       |   |   |   off.py
+|   |       |   |   |   on.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           on.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---loops
+|   |       |   |   |   asyncio.py
+|   |       |   |   |   auto.py
+|   |       |   |   |   uvloop.py
+|   |       |   |   |   zuvloop.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asyncio.cpython-314.pyc
+|   |       |   |           auto.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   asgi2.py
+|   |       |   |   |   message_logger.py
+|   |       |   |   |   proxy_headers.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asgi2.cpython-314.pyc
+|   |       |   |           message_logger.cpython-314.pyc
+|   |       |   |           proxy_headers.cpython-314.pyc
+|   |       |   |           wsgi.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---protocols
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---http
+|   |       |   |   |   |   auto.py
+|   |       |   |   |   |   auto_zttp_impl.py
+|   |       |   |   |   |   flow_control.py
+|   |       |   |   |   |   h11_impl.py
+|   |       |   |   |   |   httptools_impl.py
+|   |       |   |   |   |   zttp_h2_impl.py
+|   |       |   |   |   |   zttp_impl.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           auto.cpython-314.pyc
+|   |       |   |   |           flow_control.cpython-314.pyc
+|   |       |   |   |           httptools_impl.cpython-314.pyc
+|   |       |   |   |           __init__.cpython-314.pyc
+|   |       |   |   |           
+|   |       |   |   +---websockets
+|   |       |   |   |   |   auto.py
+|   |       |   |   |   |   websockets_impl.py
+|   |       |   |   |   |   websockets_sansio_impl.py
+|   |       |   |   |   |   wsproto_impl.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           auto.cpython-314.pyc
+|   |       |   |   |           websockets_sansio_impl.cpython-314.pyc
+|   |       |   |   |           __init__.cpython-314.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           utils.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---supervisors
+|   |       |   |   |   basereload.py
+|   |       |   |   |   multiprocess.py
+|   |       |   |   |   statreload.py
+|   |       |   |   |   watchfilesreload.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           basereload.cpython-314.pyc
+|   |       |   |           multiprocess.cpython-314.pyc
+|   |       |   |           watchfilesreload.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           config.cpython-314.pyc
+|   |       |           importer.cpython-314.pyc
+|   |       |           logging.cpython-314.pyc
+|   |       |           main.cpython-314.pyc
+|   |       |           server.cpython-314.pyc
+|   |       |           _ansi.cpython-314.pyc
+|   |       |           _compat.cpython-314.pyc
+|   |       |           _subprocess.cpython-314.pyc
+|   |       |           _types.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---uvicorn-0.53.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---watchfiles
+|   |       |   |   cli.py
+|   |       |   |   filters.py
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   run.py
+|   |       |   |   version.py
+|   |       |   |   _rust_notify.cp314-win_amd64.pyd
+|   |       |   |   _rust_notify.pyi
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           filters.cpython-314.pyc
+|   |       |           main.cpython-314.pyc
+|   |       |           run.cpython-314.pyc
+|   |       |           version.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---watchfiles-1.2.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   +---licenses
+|   |       |   |       LICENSE
+|   |       |   |       
+|   |       |   \---sboms
+|   |       |           watchfiles_rust_notify.cyclonedx.json
+|   |       |           
+|   |       +---websockets
+|   |       |   |   auth.py
+|   |       |   |   cli.py
+|   |       |   |   client.py
+|   |       |   |   connection.py
+|   |       |   |   datastructures.py
+|   |       |   |   exceptions.py
+|   |       |   |   frames.py
+|   |       |   |   headers.py
+|   |       |   |   http11.py
+|   |       |   |   imports.py
+|   |       |   |   protocol.py
+|   |       |   |   proxy.py
+|   |       |   |   py.typed
+|   |       |   |   server.py
+|   |       |   |   speedups.c
+|   |       |   |   speedups.cp314-win_amd64.pyd
+|   |       |   |   speedups.pyi
+|   |       |   |   streams.py
+|   |       |   |   typing.py
+|   |       |   |   uri.py
+|   |       |   |   utils.py
+|   |       |   |   version.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---asyncio
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---extensions
+|   |       |   |   |   base.py
+|   |       |   |   |   permessage_deflate.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           base.cpython-314.pyc
+|   |       |   |           permessage_deflate.cpython-314.pyc
+|   |       |   |           __init__.cpython-314.pyc
+|   |       |   |           
+|   |       |   +---legacy
+|   |       |   |       auth.py
+|   |       |   |       client.py
+|   |       |   |       exceptions.py
+|   |       |   |       framing.py
+|   |       |   |       handshake.py
+|   |       |   |       http.py
+|   |       |   |       protocol.py
+|   |       |   |       server.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---sync
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       utils.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---trio
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       utils.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---__pycache__
+|   |       |           datastructures.cpython-314.pyc
+|   |       |           exceptions.cpython-314.pyc
+|   |       |           frames.cpython-314.pyc
+|   |       |           headers.cpython-314.pyc
+|   |       |           http11.cpython-314.pyc
+|   |       |           imports.cpython-314.pyc
+|   |       |           protocol.cpython-314.pyc
+|   |       |           server.cpython-314.pyc
+|   |       |           streams.cpython-314.pyc
+|   |       |           typing.cpython-314.pyc
+|   |       |           utils.cpython-314.pyc
+|   |       |           version.cpython-314.pyc
+|   |       |           __init__.cpython-314.pyc
+|   |       |           
+|   |       +---websockets-17.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---yaml
+|   |       |       composer.py
+|   |       |       constructor.py
+|   |       |       cyaml.py
+|   |       |       dumper.py
+|   |       |       emitter.py
+|   |       |       error.py
+|   |       |       events.py
+|   |       |       loader.py
+|   |       |       nodes.py
+|   |       |       parser.py
+|   |       |       reader.py
+|   |       |       representer.py
+|   |       |       resolver.py
+|   |       |       scanner.py
+|   |       |       serializer.py
+|   |       |       tokens.py
+|   |       |       _yaml.cp314-win_amd64.pyd
+|   |       |       __init__.py
+|   |       |       
+|   |       +---_pytest
+|   |       |   |   cacheprovider.py
+|   |       |   |   capture.py
+|   |       |   |   compat.py
+|   |       |   |   debugging.py
+|   |       |   |   deprecated.py
+|   |       |   |   doctest.py
+|   |       |   |   faulthandler.py
+|   |       |   |   fixtures.py
+|   |       |   |   freeze_support.py
+|   |       |   |   helpconfig.py
+|   |       |   |   hookspec.py
+|   |       |   |   junitxml.py
+|   |       |   |   legacypath.py
+|   |       |   |   logging.py
+|   |       |   |   main.py
+|   |       |   |   monkeypatch.py
+|   |       |   |   nodes.py
+|   |       |   |   outcomes.py
+|   |       |   |   pastebin.py
+|   |       |   |   pathlib.py
+|   |       |   |   py.typed
+|   |       |   |   pytester.py
+|   |       |   |   pytester_assertions.py
+|   |       |   |   python.py
+|   |       |   |   python_api.py
+|   |       |   |   raises.py
+|   |       |   |   recwarn.py
+|   |       |   |   reports.py
+|   |       |   |   runner.py
+|   |       |   |   scope.py
+|   |       |   |   setuponly.py
+|   |       |   |   setupplan.py
+|   |       |   |   skipping.py
+|   |       |   |   stash.py
+|   |       |   |   stepwise.py
+|   |       |   |   subtests.py
+|   |       |   |   terminal.py
+|   |       |   |   terminalprogress.py
+|   |       |   |   threadexception.py
+|   |       |   |   timing.py
+|   |       |   |   tmpdir.py
+|   |       |   |   tracemalloc.py
+|   |       |   |   unittest.py
+|   |       |   |   unraisableexception.py
+|   |       |   |   warnings.py
+|   |       |   |   warning_types.py
+|   |       |   |   _argcomplete.py
+|   |       |   |   _version.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---assertion
+|   |       |   |       compare_text.py
+|   |       |   |       highlight.py
+|   |       |   |       rewrite.py
+|   |       |   |       truncate.py
+|   |       |   |       util.py
+|   |       |   |       _compare_any.py
+|   |       |   |       _compare_mapping.py
+|   |       |   |       _compare_sequence.py
+|   |       |   |       _compare_set.py
+|   |       |   |       _guards.py
+|   |       |   |       _typing.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---config
+|   |       |   |       argparsing.py
+|   |       |   |       exceptions.py
+|   |       |   |       findpaths.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---mark
+|   |       |   |       expression.py
+|   |       |   |       structures.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_code
+|   |       |   |       code.py
+|   |       |   |       source.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_io
+|   |       |   |       pprint.py
+|   |       |   |       saferepr.py
+|   |       |   |       terminalwriter.py
+|   |       |   |       wcwidth.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---_py
+|   |       |           error.py
+|   |       |           path.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---_yaml
+|   |       |       __init__.py
+|   |       |       
+|   |       \---__pycache__
+|   |               typing_extensions.cpython-314.pyc
+|   |               _virtualenv.cpython-314.pyc
+|   |               
+|   \---Scripts
+|           activate
+|           activate.bat
+|           activate.csh
+|           activate.fish
+|           activate.nu
+|           activate.ps1
+|           activate.xsh
+|           activate_this.py
+|           deactivate.bat
+|           dotenv.exe
+|           fastapi.exe
+|           httpx.exe
+|           idna.exe
+|           py.test.exe
+|           pydoc.bat
+|           pygmentize.exe
+|           pytest.exe
+|           python.exe
+|           pythonw.exe
+|           uvicorn.exe
+|           watchfiles.exe
+|           websockets.exe
+|           
++---.venv311
+|   |   .gitignore
+|   |   .lock
+|   |   CACHEDIR.TAG
+|   |   pyvenv.cfg
+|   |   
+|   +---Lib
+|   |   \---site-packages
+|   |       |   py.py
+|   |       |   typing_extensions.py
+|   |       |   _virtualenv.pth
+|   |       |   _virtualenv.py
+|   |       |   
+|   |       +---aiofiles
+|   |       |   |   base.py
+|   |       |   |   os.py
+|   |       |   |   ospath.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---tempfile
+|   |       |   |       temptypes.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---threadpool
+|   |       |           binary.py
+|   |       |           text.py
+|   |       |           utils.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---aiofiles-25.1.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           NOTICE
+|   |       |           
+|   |       +---annotated_doc
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           main.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---annotated_doc-0.0.5.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---annotated_types
+|   |       |   |   py.typed
+|   |       |   |   test_cases.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---annotated_types-0.8.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---anyio
+|   |       |   |   from_thread.py
+|   |       |   |   functools.py
+|   |       |   |   itertools.py
+|   |       |   |   lowlevel.py
+|   |       |   |   py.typed
+|   |       |   |   pytest_plugin.py
+|   |       |   |   to_interpreter.py
+|   |       |   |   to_process.py
+|   |       |   |   to_thread.py
+|   |       |   |   _lazyimport.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---abc
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _eventloop.cpython-311.pyc
+|   |       |   |           _resources.cpython-311.pyc
+|   |       |   |           _sockets.cpython-311.pyc
+|   |       |   |           _streams.cpython-311.pyc
+|   |       |   |           _subprocesses.cpython-311.pyc
+|   |       |   |           _tasks.cpython-311.pyc
+|   |       |   |           _testing.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---streams
+|   |       |   |   |   buffered.py
+|   |       |   |   |   file.py
+|   |       |   |   |   memory.py
+|   |       |   |   |   stapled.py
+|   |       |   |   |   text.py
+|   |       |   |   |   tls.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           memory.cpython-311.pyc
+|   |       |   |           stapled.cpython-311.pyc
+|   |       |   |           tls.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---_backends
+|   |       |   |   |   _asyncio.py
+|   |       |   |   |   _trio.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _asyncio.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---_core
+|   |       |   |   |   _asyncio_selector_thread.py
+|   |       |   |   |   _concurrency_utils.py
+|   |       |   |   |   _contextmanagers.py
+|   |       |   |   |   _eventloop.py
+|   |       |   |   |   _exceptions.py
+|   |       |   |   |   _fileio.py
+|   |       |   |   |   _futures.py
+|   |       |   |   |   _resources.py
+|   |       |   |   |   _signals.py
+|   |       |   |   |   _sockets.py
+|   |       |   |   |   _streams.py
+|   |       |   |   |   _subprocesses.py
+|   |       |   |   |   _synchronization.py
+|   |       |   |   |   _tasks.py
+|   |       |   |   |   _tempfile.py
+|   |       |   |   |   _testing.py
+|   |       |   |   |   _typedattr.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _eventloop.cpython-311.pyc
+|   |       |   |           _exceptions.cpython-311.pyc
+|   |       |   |           _fileio.cpython-311.pyc
+|   |       |   |           _resources.cpython-311.pyc
+|   |       |   |           _sockets.cpython-311.pyc
+|   |       |   |           _streams.cpython-311.pyc
+|   |       |   |           _synchronization.cpython-311.pyc
+|   |       |   |           _tasks.cpython-311.pyc
+|   |       |   |           _testing.cpython-311.pyc
+|   |       |   |           _typedattr.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           from_thread.cpython-311.pyc
+|   |       |           lowlevel.cpython-311.pyc
+|   |       |           to_thread.cpython-311.pyc
+|   |       |           _lazyimport.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---anyio-4.15.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---certifi
+|   |       |   |   cacert.pem
+|   |       |   |   core.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---tests
+|   |       |           test_certify.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---certifi-2026.7.22.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---click
+|   |       |   |   core.py
+|   |       |   |   decorators.py
+|   |       |   |   exceptions.py
+|   |       |   |   formatting.py
+|   |       |   |   globals.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   shell_completion.py
+|   |       |   |   termui.py
+|   |       |   |   testing.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   _compat.py
+|   |       |   |   _termui_impl.py
+|   |       |   |   _textwrap.py
+|   |       |   |   _utils.py
+|   |       |   |   _winconsole.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-311.pyc
+|   |       |           decorators.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           formatting.cpython-311.pyc
+|   |       |           globals.cpython-311.pyc
+|   |       |           parser.cpython-311.pyc
+|   |       |           termui.cpython-311.pyc
+|   |       |           types.cpython-311.pyc
+|   |       |           utils.cpython-311.pyc
+|   |       |           _compat.cpython-311.pyc
+|   |       |           _utils.cpython-311.pyc
+|   |       |           _winconsole.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---click-8.5.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---colorama
+|   |       |   |   ansi.py
+|   |       |   |   ansitowin32.py
+|   |       |   |   initialise.py
+|   |       |   |   win32.py
+|   |       |   |   winterm.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---tests
+|   |       |           ansitowin32_test.py
+|   |       |           ansi_test.py
+|   |       |           initialise_test.py
+|   |       |           isatty_test.py
+|   |       |           utils.py
+|   |       |           winterm_test.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---colorama-0.4.6.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---dotenv
+|   |       |       cli.py
+|   |       |       ipython.py
+|   |       |       main.py
+|   |       |       parser.py
+|   |       |       py.typed
+|   |       |       variables.py
+|   |       |       version.py
+|   |       |       __init__.py
+|   |       |       __main__.py
+|   |       |       
+|   |       +---fastapi
+|   |       |   |   applications.py
+|   |       |   |   background.py
+|   |       |   |   cli.py
+|   |       |   |   concurrency.py
+|   |       |   |   datastructures.py
+|   |       |   |   encoders.py
+|   |       |   |   exceptions.py
+|   |       |   |   exception_handlers.py
+|   |       |   |   logger.py
+|   |       |   |   params.py
+|   |       |   |   param_functions.py
+|   |       |   |   py.typed
+|   |       |   |   requests.py
+|   |       |   |   responses.py
+|   |       |   |   routing.py
+|   |       |   |   sse.py
+|   |       |   |   staticfiles.py
+|   |       |   |   templating.py
+|   |       |   |   testclient.py
+|   |       |   |   types.py
+|   |       |   |   utils.py
+|   |       |   |   websockets.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---.agents
+|   |       |   |   \---skills
+|   |       |   |       \---fastapi
+|   |       |   |           |   SKILL.md
+|   |       |   |           |   
+|   |       |   |           \---references
+|   |       |   |                   dependencies.md
+|   |       |   |                   other-tools.md
+|   |       |   |                   path-operations.md
+|   |       |   |                   pydantic.md
+|   |       |   |                   responses.md
+|   |       |   |                   streaming.md
+|   |       |   |                   
+|   |       |   +---dependencies
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           models.cpython-311.pyc
+|   |       |   |           utils.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   asyncexitstack.py
+|   |       |   |   |   cors.py
+|   |       |   |   |   gzip.py
+|   |       |   |   |   httpsredirect.py
+|   |       |   |   |   trustedhost.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asyncexitstack.cpython-311.pyc
+|   |       |   |           cors.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---openapi
+|   |       |   |   |   constants.py
+|   |       |   |   |   docs.py
+|   |       |   |   |   models.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           constants.cpython-311.pyc
+|   |       |   |           docs.cpython-311.pyc
+|   |       |   |           models.cpython-311.pyc
+|   |       |   |           utils.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---security
+|   |       |   |   |   api_key.py
+|   |       |   |   |   base.py
+|   |       |   |   |   http.py
+|   |       |   |   |   oauth2.py
+|   |       |   |   |   open_id_connect_url.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           api_key.cpython-311.pyc
+|   |       |   |           base.cpython-311.pyc
+|   |       |   |           http.cpython-311.pyc
+|   |       |   |           oauth2.cpython-311.pyc
+|   |       |   |           open_id_connect_url.cpython-311.pyc
+|   |       |   |           utils.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---_compat
+|   |       |   |   |   shared.py
+|   |       |   |   |   v2.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           shared.cpython-311.pyc
+|   |       |   |           v2.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           applications.cpython-311.pyc
+|   |       |           background.cpython-311.pyc
+|   |       |           concurrency.cpython-311.pyc
+|   |       |           datastructures.cpython-311.pyc
+|   |       |           encoders.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           exception_handlers.cpython-311.pyc
+|   |       |           logger.cpython-311.pyc
+|   |       |           params.cpython-311.pyc
+|   |       |           param_functions.cpython-311.pyc
+|   |       |           requests.cpython-311.pyc
+|   |       |           responses.cpython-311.pyc
+|   |       |           routing.cpython-311.pyc
+|   |       |           sse.cpython-311.pyc
+|   |       |           staticfiles.cpython-311.pyc
+|   |       |           templating.cpython-311.pyc
+|   |       |           testclient.cpython-311.pyc
+|   |       |           types.cpython-311.pyc
+|   |       |           utils.cpython-311.pyc
+|   |       |           websockets.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---fastapi-0.141.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---h11
+|   |       |       py.typed
+|   |       |       _abnf.py
+|   |       |       _connection.py
+|   |       |       _events.py
+|   |       |       _headers.py
+|   |       |       _readers.py
+|   |       |       _receivebuffer.py
+|   |       |       _state.py
+|   |       |       _util.py
+|   |       |       _version.py
+|   |       |       _writers.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---h11-0.16.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---httpcore
+|   |       |   |   py.typed
+|   |       |   |   _api.py
+|   |       |   |   _exceptions.py
+|   |       |   |   _models.py
+|   |       |   |   _ssl.py
+|   |       |   |   _synchronization.py
+|   |       |   |   _trace.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---_async
+|   |       |   |       connection.py
+|   |       |   |       connection_pool.py
+|   |       |   |       http11.py
+|   |       |   |       http2.py
+|   |       |   |       http_proxy.py
+|   |       |   |       interfaces.py
+|   |       |   |       socks_proxy.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_backends
+|   |       |   |       anyio.py
+|   |       |   |       auto.py
+|   |       |   |       base.py
+|   |       |   |       mock.py
+|   |       |   |       sync.py
+|   |       |   |       trio.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---_sync
+|   |       |           connection.py
+|   |       |           connection_pool.py
+|   |       |           http11.py
+|   |       |           http2.py
+|   |       |           http_proxy.py
+|   |       |           interfaces.py
+|   |       |           socks_proxy.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---httpcore-1.0.9.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---httptools
+|   |       |   |   py.typed
+|   |       |   |   _version.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---parser
+|   |       |   |   |   cparser.pxd
+|   |       |   |   |   errors.py
+|   |       |   |   |   parser.cp311-win_amd64.pyd
+|   |       |   |   |   parser.pyi
+|   |       |   |   |   parser.pyx
+|   |       |   |   |   protocol.py
+|   |       |   |   |   python.pxd
+|   |       |   |   |   url_cparser.pxd
+|   |       |   |   |   url_parser.cp311-win_amd64.pyd
+|   |       |   |   |   url_parser.pyi
+|   |       |   |   |   url_parser.pyx
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           errors.cpython-311.pyc
+|   |       |   |           protocol.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           _version.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---httptools-0.8.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |       |   LICENSE
+|   |       |       |   
+|   |       |       \---vendor
+|   |       |           +---http-parser
+|   |       |           |       LICENSE-MIT
+|   |       |           |       
+|   |       |           \---llhttp
+|   |       |                   LICENSE
+|   |       |                   
+|   |       +---httpx
+|   |       |   |   py.typed
+|   |       |   |   _api.py
+|   |       |   |   _auth.py
+|   |       |   |   _client.py
+|   |       |   |   _config.py
+|   |       |   |   _content.py
+|   |       |   |   _decoders.py
+|   |       |   |   _exceptions.py
+|   |       |   |   _main.py
+|   |       |   |   _models.py
+|   |       |   |   _multipart.py
+|   |       |   |   _status_codes.py
+|   |       |   |   _types.py
+|   |       |   |   _urlparse.py
+|   |       |   |   _urls.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   __version__.py
+|   |       |   |   
+|   |       |   +---_transports
+|   |       |   |   |   asgi.py
+|   |       |   |   |   base.py
+|   |       |   |   |   default.py
+|   |       |   |   |   mock.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asgi.cpython-311.pyc
+|   |       |   |           base.cpython-311.pyc
+|   |       |   |           default.cpython-311.pyc
+|   |       |   |           mock.cpython-311.pyc
+|   |       |   |           wsgi.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           _api.cpython-311.pyc
+|   |       |           _auth.cpython-311.pyc
+|   |       |           _client.cpython-311.pyc
+|   |       |           _config.cpython-311.pyc
+|   |       |           _content.cpython-311.pyc
+|   |       |           _decoders.cpython-311.pyc
+|   |       |           _exceptions.cpython-311.pyc
+|   |       |           _main.cpython-311.pyc
+|   |       |           _models.cpython-311.pyc
+|   |       |           _multipart.cpython-311.pyc
+|   |       |           _status_codes.cpython-311.pyc
+|   |       |           _types.cpython-311.pyc
+|   |       |           _urlparse.cpython-311.pyc
+|   |       |           _urls.cpython-311.pyc
+|   |       |           _utils.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           __version__.cpython-311.pyc
+|   |       |           
+|   |       +---httpx-0.28.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---idna
+|   |       |   |   cli.py
+|   |       |   |   codec.py
+|   |       |   |   compat.py
+|   |       |   |   core.py
+|   |       |   |   idnadata.py
+|   |       |   |   intranges.py
+|   |       |   |   package_data.py
+|   |       |   |   py.typed
+|   |       |   |   uts46data.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core.cpython-311.pyc
+|   |       |           idnadata.cpython-311.pyc
+|   |       |           intranges.cpython-311.pyc
+|   |       |           package_data.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---idna-3.19.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---iniconfig
+|   |       |       exceptions.py
+|   |       |       py.typed
+|   |       |       _parse.py
+|   |       |       _version.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---iniconfig-2.3.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---jinja2
+|   |       |   |   async_utils.py
+|   |       |   |   bccache.py
+|   |       |   |   compiler.py
+|   |       |   |   constants.py
+|   |       |   |   debug.py
+|   |       |   |   defaults.py
+|   |       |   |   environment.py
+|   |       |   |   exceptions.py
+|   |       |   |   ext.py
+|   |       |   |   filters.py
+|   |       |   |   idtracking.py
+|   |       |   |   lexer.py
+|   |       |   |   loaders.py
+|   |       |   |   meta.py
+|   |       |   |   nativetypes.py
+|   |       |   |   nodes.py
+|   |       |   |   optimizer.py
+|   |       |   |   parser.py
+|   |       |   |   py.typed
+|   |       |   |   runtime.py
+|   |       |   |   sandbox.py
+|   |       |   |   tests.py
+|   |       |   |   utils.py
+|   |       |   |   visitor.py
+|   |       |   |   _identifier.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           async_utils.cpython-311.pyc
+|   |       |           bccache.cpython-311.pyc
+|   |       |           compiler.cpython-311.pyc
+|   |       |           defaults.cpython-311.pyc
+|   |       |           environment.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           filters.cpython-311.pyc
+|   |       |           idtracking.cpython-311.pyc
+|   |       |           lexer.cpython-311.pyc
+|   |       |           loaders.cpython-311.pyc
+|   |       |           nodes.cpython-311.pyc
+|   |       |           optimizer.cpython-311.pyc
+|   |       |           parser.cpython-311.pyc
+|   |       |           runtime.cpython-311.pyc
+|   |       |           tests.cpython-311.pyc
+|   |       |           utils.cpython-311.pyc
+|   |       |           visitor.cpython-311.pyc
+|   |       |           _identifier.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---jinja2-3.1.6.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---markupsafe
+|   |       |   |   py.typed
+|   |       |   |   _native.py
+|   |       |   |   _speedups.c
+|   |       |   |   _speedups.cp311-win_amd64.pyd
+|   |       |   |   _speedups.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---markupsafe-3.0.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---multipart
+|   |       |       decoders.py
+|   |       |       exceptions.py
+|   |       |       multipart.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---packaging
+|   |       |   |   dependency_groups.py
+|   |       |   |   direct_url.py
+|   |       |   |   errors.py
+|   |       |   |   markers.py
+|   |       |   |   metadata.py
+|   |       |   |   py.typed
+|   |       |   |   pylock.py
+|   |       |   |   ranges.py
+|   |       |   |   requirements.py
+|   |       |   |   specifiers.py
+|   |       |   |   tags.py
+|   |       |   |   utils.py
+|   |       |   |   version.py
+|   |       |   |   _elffile.py
+|   |       |   |   _manylinux.py
+|   |       |   |   _musllinux.py
+|   |       |   |   _parser.py
+|   |       |   |   _ranges.py
+|   |       |   |   _structures.py
+|   |       |   |   _tokenizer.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           _spdx.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---packaging-26.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           LICENSE.APACHE
+|   |       |           LICENSE.BSD
+|   |       |           
+|   |       +---pluggy
+|   |       |       py.typed
+|   |       |       _callers.py
+|   |       |       _hooks.py
+|   |       |       _manager.py
+|   |       |       _result.py
+|   |       |       _tracing.py
+|   |       |       _version.py
+|   |       |       _warnings.py
+|   |       |       __init__.py
+|   |       |       
+|   |       +---pluggy-1.6.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pydantic
+|   |       |   |   aliases.py
+|   |       |   |   alias_generators.py
+|   |       |   |   annotated_handlers.py
+|   |       |   |   class_validators.py
+|   |       |   |   color.py
+|   |       |   |   config.py
+|   |       |   |   dataclasses.py
+|   |       |   |   datetime_parse.py
+|   |       |   |   decorator.py
+|   |       |   |   env_settings.py
+|   |       |   |   errors.py
+|   |       |   |   error_wrappers.py
+|   |       |   |   fields.py
+|   |       |   |   functional_serializers.py
+|   |       |   |   functional_validators.py
+|   |       |   |   generics.py
+|   |       |   |   json.py
+|   |       |   |   json_schema.py
+|   |       |   |   main.py
+|   |       |   |   mypy.py
+|   |       |   |   networks.py
+|   |       |   |   parse.py
+|   |       |   |   py.typed
+|   |       |   |   root_model.py
+|   |       |   |   schema.py
+|   |       |   |   tools.py
+|   |       |   |   types.py
+|   |       |   |   type_adapter.py
+|   |       |   |   typing.py
+|   |       |   |   utils.py
+|   |       |   |   validate_call_decorator.py
+|   |       |   |   validators.py
+|   |       |   |   version.py
+|   |       |   |   warnings.py
+|   |       |   |   _migration.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---deprecated
+|   |       |   |       class_validators.py
+|   |       |   |       config.py
+|   |       |   |       copy_internals.py
+|   |       |   |       decorator.py
+|   |       |   |       json.py
+|   |       |   |       parse.py
+|   |       |   |       tools.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---experimental
+|   |       |   |       arguments_schema.py
+|   |       |   |       missing_sentinel.py
+|   |       |   |       pipeline.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---plugin
+|   |       |   |   |   _loader.py
+|   |       |   |   |   _schema_validator.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _loader.cpython-311.pyc
+|   |       |   |           _schema_validator.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---v1
+|   |       |   |   |   annotated_types.py
+|   |       |   |   |   class_validators.py
+|   |       |   |   |   color.py
+|   |       |   |   |   config.py
+|   |       |   |   |   dataclasses.py
+|   |       |   |   |   datetime_parse.py
+|   |       |   |   |   decorator.py
+|   |       |   |   |   env_settings.py
+|   |       |   |   |   errors.py
+|   |       |   |   |   error_wrappers.py
+|   |       |   |   |   fields.py
+|   |       |   |   |   generics.py
+|   |       |   |   |   json.py
+|   |       |   |   |   main.py
+|   |       |   |   |   mypy.py
+|   |       |   |   |   networks.py
+|   |       |   |   |   parse.py
+|   |       |   |   |   py.typed
+|   |       |   |   |   schema.py
+|   |       |   |   |   tools.py
+|   |       |   |   |   types.py
+|   |       |   |   |   typing.py
+|   |       |   |   |   utils.py
+|   |       |   |   |   validators.py
+|   |       |   |   |   version.py
+|   |       |   |   |   _hypothesis_plugin.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           annotated_types.cpython-311.pyc
+|   |       |   |           class_validators.cpython-311.pyc
+|   |       |   |           color.cpython-311.pyc
+|   |       |   |           config.cpython-311.pyc
+|   |       |   |           dataclasses.cpython-311.pyc
+|   |       |   |           datetime_parse.cpython-311.pyc
+|   |       |   |           decorator.cpython-311.pyc
+|   |       |   |           env_settings.cpython-311.pyc
+|   |       |   |           errors.cpython-311.pyc
+|   |       |   |           error_wrappers.cpython-311.pyc
+|   |       |   |           fields.cpython-311.pyc
+|   |       |   |           json.cpython-311.pyc
+|   |       |   |           main.cpython-311.pyc
+|   |       |   |           networks.cpython-311.pyc
+|   |       |   |           parse.cpython-311.pyc
+|   |       |   |           schema.cpython-311.pyc
+|   |       |   |           tools.cpython-311.pyc
+|   |       |   |           types.cpython-311.pyc
+|   |       |   |           typing.cpython-311.pyc
+|   |       |   |           utils.cpython-311.pyc
+|   |       |   |           validators.cpython-311.pyc
+|   |       |   |           version.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---_internal
+|   |       |   |   |   _config.py
+|   |       |   |   |   _core_metadata.py
+|   |       |   |   |   _core_utils.py
+|   |       |   |   |   _dataclasses.py
+|   |       |   |   |   _decorators.py
+|   |       |   |   |   _decorators_v1.py
+|   |       |   |   |   _discriminated_union.py
+|   |       |   |   |   _docs_extraction.py
+|   |       |   |   |   _fields.py
+|   |       |   |   |   _forward_ref.py
+|   |       |   |   |   _generate_schema.py
+|   |       |   |   |   _generics.py
+|   |       |   |   |   _git.py
+|   |       |   |   |   _import_utils.py
+|   |       |   |   |   _internal_dataclass.py
+|   |       |   |   |   _known_annotated_metadata.py
+|   |       |   |   |   _mock_val_ser.py
+|   |       |   |   |   _model_construction.py
+|   |       |   |   |   _namespace_utils.py
+|   |       |   |   |   _repr.py
+|   |       |   |   |   _schema_gather.py
+|   |       |   |   |   _schema_generation_shared.py
+|   |       |   |   |   _serializers.py
+|   |       |   |   |   _signature.py
+|   |       |   |   |   _typing_extra.py
+|   |       |   |   |   _utils.py
+|   |       |   |   |   _validate_call.py
+|   |       |   |   |   _validators.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _config.cpython-311.pyc
+|   |       |   |           _core_metadata.cpython-311.pyc
+|   |       |   |           _core_utils.cpython-311.pyc
+|   |       |   |           _decorators.cpython-311.pyc
+|   |       |   |           _discriminated_union.cpython-311.pyc
+|   |       |   |           _docs_extraction.cpython-311.pyc
+|   |       |   |           _fields.cpython-311.pyc
+|   |       |   |           _forward_ref.cpython-311.pyc
+|   |       |   |           _generate_schema.cpython-311.pyc
+|   |       |   |           _generics.cpython-311.pyc
+|   |       |   |           _import_utils.cpython-311.pyc
+|   |       |   |           _internal_dataclass.cpython-311.pyc
+|   |       |   |           _known_annotated_metadata.cpython-311.pyc
+|   |       |   |           _mock_val_ser.cpython-311.pyc
+|   |       |   |           _model_construction.cpython-311.pyc
+|   |       |   |           _namespace_utils.cpython-311.pyc
+|   |       |   |           _repr.cpython-311.pyc
+|   |       |   |           _schema_gather.cpython-311.pyc
+|   |       |   |           _schema_generation_shared.cpython-311.pyc
+|   |       |   |           _signature.cpython-311.pyc
+|   |       |   |           _typing_extra.cpython-311.pyc
+|   |       |   |           _utils.cpython-311.pyc
+|   |       |   |           _validators.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           aliases.cpython-311.pyc
+|   |       |           annotated_handlers.cpython-311.pyc
+|   |       |           color.cpython-311.pyc
+|   |       |           config.cpython-311.pyc
+|   |       |           errors.cpython-311.pyc
+|   |       |           fields.cpython-311.pyc
+|   |       |           functional_validators.cpython-311.pyc
+|   |       |           json_schema.cpython-311.pyc
+|   |       |           main.cpython-311.pyc
+|   |       |           networks.cpython-311.pyc
+|   |       |           types.cpython-311.pyc
+|   |       |           type_adapter.cpython-311.pyc
+|   |       |           version.cpython-311.pyc
+|   |       |           warnings.cpython-311.pyc
+|   |       |           _migration.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---pydantic-2.13.5.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pydantic_core
+|   |       |   |   core_schema.py
+|   |       |   |   py.typed
+|   |       |   |   _pydantic_core.cp311-win_amd64.pyd
+|   |       |   |   _pydantic_core.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           core_schema.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---pydantic_core-2.46.5.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   +---licenses
+|   |       |   |       LICENSE
+|   |       |   |       
+|   |       |   \---sboms
+|   |       |           pydantic-core.cyclonedx.json
+|   |       |           
+|   |       +---pygments
+|   |       |   |   cmdline.py
+|   |       |   |   console.py
+|   |       |   |   filter.py
+|   |       |   |   formatter.py
+|   |       |   |   lexer.py
+|   |       |   |   modeline.py
+|   |       |   |   plugin.py
+|   |       |   |   regexopt.py
+|   |       |   |   scanner.py
+|   |       |   |   sphinxext.py
+|   |       |   |   style.py
+|   |       |   |   token.py
+|   |       |   |   unistring.py
+|   |       |   |   util.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---filters
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---formatters
+|   |       |   |       bbcode.py
+|   |       |   |       groff.py
+|   |       |   |       html.py
+|   |       |   |       img.py
+|   |       |   |       irc.py
+|   |       |   |       latex.py
+|   |       |   |       other.py
+|   |       |   |       pangomarkup.py
+|   |       |   |       rtf.py
+|   |       |   |       svg.py
+|   |       |   |       terminal.py
+|   |       |   |       terminal256.py
+|   |       |   |       _mapping.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---lexers
+|   |       |   |   |   actionscript.py
+|   |       |   |   |   ada.py
+|   |       |   |   |   agile.py
+|   |       |   |   |   algebra.py
+|   |       |   |   |   ambient.py
+|   |       |   |   |   amdgpu.py
+|   |       |   |   |   ampl.py
+|   |       |   |   |   apdlexer.py
+|   |       |   |   |   apl.py
+|   |       |   |   |   archetype.py
+|   |       |   |   |   arrow.py
+|   |       |   |   |   arturo.py
+|   |       |   |   |   asc.py
+|   |       |   |   |   asm.py
+|   |       |   |   |   asn1.py
+|   |       |   |   |   automation.py
+|   |       |   |   |   bare.py
+|   |       |   |   |   basic.py
+|   |       |   |   |   bdd.py
+|   |       |   |   |   berry.py
+|   |       |   |   |   bibtex.py
+|   |       |   |   |   bitbake.py
+|   |       |   |   |   blueprint.py
+|   |       |   |   |   boa.py
+|   |       |   |   |   bqn.py
+|   |       |   |   |   business.py
+|   |       |   |   |   capnproto.py
+|   |       |   |   |   carbon.py
+|   |       |   |   |   cddl.py
+|   |       |   |   |   cel.py
+|   |       |   |   |   chapel.py
+|   |       |   |   |   clean.py
+|   |       |   |   |   codeql.py
+|   |       |   |   |   comal.py
+|   |       |   |   |   compiled.py
+|   |       |   |   |   configs.py
+|   |       |   |   |   console.py
+|   |       |   |   |   cplint.py
+|   |       |   |   |   crystal.py
+|   |       |   |   |   csound.py
+|   |       |   |   |   css.py
+|   |       |   |   |   c_cpp.py
+|   |       |   |   |   c_like.py
+|   |       |   |   |   d.py
+|   |       |   |   |   dalvik.py
+|   |       |   |   |   data.py
+|   |       |   |   |   dax.py
+|   |       |   |   |   devicetree.py
+|   |       |   |   |   diff.py
+|   |       |   |   |   dns.py
+|   |       |   |   |   dotnet.py
+|   |       |   |   |   dsls.py
+|   |       |   |   |   dylan.py
+|   |       |   |   |   ecl.py
+|   |       |   |   |   eiffel.py
+|   |       |   |   |   elm.py
+|   |       |   |   |   elpi.py
+|   |       |   |   |   email.py
+|   |       |   |   |   erlang.py
+|   |       |   |   |   esoteric.py
+|   |       |   |   |   ezhil.py
+|   |       |   |   |   factor.py
+|   |       |   |   |   fantom.py
+|   |       |   |   |   felix.py
+|   |       |   |   |   fift.py
+|   |       |   |   |   floscript.py
+|   |       |   |   |   forth.py
+|   |       |   |   |   fortran.py
+|   |       |   |   |   foxpro.py
+|   |       |   |   |   freefem.py
+|   |       |   |   |   func.py
+|   |       |   |   |   functional.py
+|   |       |   |   |   futhark.py
+|   |       |   |   |   gcodelexer.py
+|   |       |   |   |   gdscript.py
+|   |       |   |   |   gleam.py
+|   |       |   |   |   go.py
+|   |       |   |   |   grammar_notation.py
+|   |       |   |   |   graph.py
+|   |       |   |   |   graphics.py
+|   |       |   |   |   graphql.py
+|   |       |   |   |   graphviz.py
+|   |       |   |   |   gsql.py
+|   |       |   |   |   hare.py
+|   |       |   |   |   haskell.py
+|   |       |   |   |   haxe.py
+|   |       |   |   |   hdl.py
+|   |       |   |   |   hexdump.py
+|   |       |   |   |   html.py
+|   |       |   |   |   idl.py
+|   |       |   |   |   igor.py
+|   |       |   |   |   inferno.py
+|   |       |   |   |   installers.py
+|   |       |   |   |   int_fiction.py
+|   |       |   |   |   iolang.py
+|   |       |   |   |   j.py
+|   |       |   |   |   javascript.py
+|   |       |   |   |   jmespath.py
+|   |       |   |   |   jslt.py
+|   |       |   |   |   json5.py
+|   |       |   |   |   jsonnet.py
+|   |       |   |   |   jsx.py
+|   |       |   |   |   julia.py
+|   |       |   |   |   jvm.py
+|   |       |   |   |   kuin.py
+|   |       |   |   |   kusto.py
+|   |       |   |   |   ldap.py
+|   |       |   |   |   lean.py
+|   |       |   |   |   lilypond.py
+|   |       |   |   |   lisp.py
+|   |       |   |   |   macaulay2.py
+|   |       |   |   |   make.py
+|   |       |   |   |   maple.py
+|   |       |   |   |   markup.py
+|   |       |   |   |   math.py
+|   |       |   |   |   matlab.py
+|   |       |   |   |   maxima.py
+|   |       |   |   |   meson.py
+|   |       |   |   |   mime.py
+|   |       |   |   |   minecraft.py
+|   |       |   |   |   mips.py
+|   |       |   |   |   ml.py
+|   |       |   |   |   modeling.py
+|   |       |   |   |   modula2.py
+|   |       |   |   |   mojo.py
+|   |       |   |   |   monte.py
+|   |       |   |   |   mosel.py
+|   |       |   |   |   ncl.py
+|   |       |   |   |   nimrod.py
+|   |       |   |   |   nit.py
+|   |       |   |   |   nix.py
+|   |       |   |   |   numbair.py
+|   |       |   |   |   oberon.py
+|   |       |   |   |   objective.py
+|   |       |   |   |   ooc.py
+|   |       |   |   |   openscad.py
+|   |       |   |   |   other.py
+|   |       |   |   |   parasail.py
+|   |       |   |   |   parsers.py
+|   |       |   |   |   pascal.py
+|   |       |   |   |   pawn.py
+|   |       |   |   |   pddl.py
+|   |       |   |   |   perl.py
+|   |       |   |   |   phix.py
+|   |       |   |   |   php.py
+|   |       |   |   |   pointless.py
+|   |       |   |   |   pony.py
+|   |       |   |   |   praat.py
+|   |       |   |   |   procfile.py
+|   |       |   |   |   prolog.py
+|   |       |   |   |   promql.py
+|   |       |   |   |   prql.py
+|   |       |   |   |   ptx.py
+|   |       |   |   |   purescript.py
+|   |       |   |   |   python.py
+|   |       |   |   |   q.py
+|   |       |   |   |   qlik.py
+|   |       |   |   |   qvt.py
+|   |       |   |   |   r.py
+|   |       |   |   |   rdf.py
+|   |       |   |   |   rebol.py
+|   |       |   |   |   rego.py
+|   |       |   |   |   rell.py
+|   |       |   |   |   resource.py
+|   |       |   |   |   ride.py
+|   |       |   |   |   rita.py
+|   |       |   |   |   rnc.py
+|   |       |   |   |   roboconf.py
+|   |       |   |   |   robotframework.py
+|   |       |   |   |   ruby.py
+|   |       |   |   |   rust.py
+|   |       |   |   |   sas.py
+|   |       |   |   |   savi.py
+|   |       |   |   |   scdoc.py
+|   |       |   |   |   scripting.py
+|   |       |   |   |   sgf.py
+|   |       |   |   |   shell.py
+|   |       |   |   |   sieve.py
+|   |       |   |   |   slash.py
+|   |       |   |   |   smalltalk.py
+|   |       |   |   |   smithy.py
+|   |       |   |   |   smv.py
+|   |       |   |   |   snobol.py
+|   |       |   |   |   solidity.py
+|   |       |   |   |   soong.py
+|   |       |   |   |   sophia.py
+|   |       |   |   |   special.py
+|   |       |   |   |   spice.py
+|   |       |   |   |   sql.py
+|   |       |   |   |   srcinfo.py
+|   |       |   |   |   stata.py
+|   |       |   |   |   supercollider.py
+|   |       |   |   |   tablegen.py
+|   |       |   |   |   tact.py
+|   |       |   |   |   tal.py
+|   |       |   |   |   tcl.py
+|   |       |   |   |   teal.py
+|   |       |   |   |   templates.py
+|   |       |   |   |   teraterm.py
+|   |       |   |   |   testing.py
+|   |       |   |   |   text.py
+|   |       |   |   |   textedit.py
+|   |       |   |   |   textfmts.py
+|   |       |   |   |   theorem.py
+|   |       |   |   |   thingsdb.py
+|   |       |   |   |   tlb.py
+|   |       |   |   |   tls.py
+|   |       |   |   |   tnt.py
+|   |       |   |   |   trafficscript.py
+|   |       |   |   |   typoscript.py
+|   |       |   |   |   typst.py
+|   |       |   |   |   ul4.py
+|   |       |   |   |   unicon.py
+|   |       |   |   |   urbi.py
+|   |       |   |   |   usd.py
+|   |       |   |   |   varnish.py
+|   |       |   |   |   verification.py
+|   |       |   |   |   verifpal.py
+|   |       |   |   |   vip.py
+|   |       |   |   |   vyper.py
+|   |       |   |   |   web.py
+|   |       |   |   |   webassembly.py
+|   |       |   |   |   webidl.py
+|   |       |   |   |   webmisc.py
+|   |       |   |   |   wgsl.py
+|   |       |   |   |   whiley.py
+|   |       |   |   |   wowtoc.py
+|   |       |   |   |   wren.py
+|   |       |   |   |   x10.py
+|   |       |   |   |   xorg.py
+|   |       |   |   |   yang.py
+|   |       |   |   |   yara.py
+|   |       |   |   |   zig.py
+|   |       |   |   |   _ada_builtins.py
+|   |       |   |   |   _asy_builtins.py
+|   |       |   |   |   _cl_builtins.py
+|   |       |   |   |   _cocoa_builtins.py
+|   |       |   |   |   _csound_builtins.py
+|   |       |   |   |   _css_builtins.py
+|   |       |   |   |   _googlesql_builtins.py
+|   |       |   |   |   _julia_builtins.py
+|   |       |   |   |   _lasso_builtins.py
+|   |       |   |   |   _lilypond_builtins.py
+|   |       |   |   |   _luau_builtins.py
+|   |       |   |   |   _lua_builtins.py
+|   |       |   |   |   _mapping.py
+|   |       |   |   |   _mql_builtins.py
+|   |       |   |   |   _mysql_builtins.py
+|   |       |   |   |   _openedge_builtins.py
+|   |       |   |   |   _php_builtins.py
+|   |       |   |   |   _postgres_builtins.py
+|   |       |   |   |   _qlik_builtins.py
+|   |       |   |   |   _scheme_builtins.py
+|   |       |   |   |   _scilab_builtins.py
+|   |       |   |   |   _sourcemod_builtins.py
+|   |       |   |   |   _sql_builtins.py
+|   |       |   |   |   _stan_builtins.py
+|   |       |   |   |   _stata_builtins.py
+|   |       |   |   |   _tsql_builtins.py
+|   |       |   |   |   _usd_builtins.py
+|   |       |   |   |   _vbscript_builtins.py
+|   |       |   |   |   _vim_builtins.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           _mapping.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---styles
+|   |       |   |       abap.py
+|   |       |   |       algol.py
+|   |       |   |       algol_nu.py
+|   |       |   |       arduino.py
+|   |       |   |       autumn.py
+|   |       |   |       borland.py
+|   |       |   |       bw.py
+|   |       |   |       coffee.py
+|   |       |   |       colorful.py
+|   |       |   |       default.py
+|   |       |   |       dracula.py
+|   |       |   |       emacs.py
+|   |       |   |       friendly.py
+|   |       |   |       friendly_grayscale.py
+|   |       |   |       fruity.py
+|   |       |   |       gh_dark.py
+|   |       |   |       gruvbox.py
+|   |       |   |       igor.py
+|   |       |   |       inkpot.py
+|   |       |   |       lightbulb.py
+|   |       |   |       lilypond.py
+|   |       |   |       lovelace.py
+|   |       |   |       manni.py
+|   |       |   |       material.py
+|   |       |   |       monokai.py
+|   |       |   |       murphy.py
+|   |       |   |       native.py
+|   |       |   |       night_owl.py
+|   |       |   |       nord.py
+|   |       |   |       onedark.py
+|   |       |   |       paraiso_dark.py
+|   |       |   |       paraiso_light.py
+|   |       |   |       pastie.py
+|   |       |   |       perldoc.py
+|   |       |   |       rainbow_dash.py
+|   |       |   |       rrt.py
+|   |       |   |       sas.py
+|   |       |   |       solarized.py
+|   |       |   |       staroffice.py
+|   |       |   |       stata_dark.py
+|   |       |   |       stata_light.py
+|   |       |   |       tango.py
+|   |       |   |       trac.py
+|   |       |   |       vim.py
+|   |       |   |       vs.py
+|   |       |   |       xcode.py
+|   |       |   |       zenburn.py
+|   |       |   |       _mapping.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---__pycache__
+|   |       |           modeline.cpython-311.pyc
+|   |       |           plugin.cpython-311.pyc
+|   |       |           util.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---pygments-2.21.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           AUTHORS
+|   |       |           LICENSE
+|   |       |           
+|   |       +---pytest
+|   |       |       py.typed
+|   |       |       __init__.py
+|   |       |       __main__.py
+|   |       |       
+|   |       +---pytest-9.1.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---python_dotenv-1.2.3.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---python_multipart
+|   |       |   |   decoders.py
+|   |       |   |   exceptions.py
+|   |       |   |   multipart.py
+|   |       |   |   py.typed
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           decoders.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           multipart.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---python_multipart-0.0.32.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.txt
+|   |       |           
+|   |       +---pyyaml-6.0.3.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---starlette
+|   |       |   |   applications.py
+|   |       |   |   authentication.py
+|   |       |   |   background.py
+|   |       |   |   concurrency.py
+|   |       |   |   config.py
+|   |       |   |   convertors.py
+|   |       |   |   datastructures.py
+|   |       |   |   endpoints.py
+|   |       |   |   exceptions.py
+|   |       |   |   formparsers.py
+|   |       |   |   py.typed
+|   |       |   |   requests.py
+|   |       |   |   responses.py
+|   |       |   |   routing.py
+|   |       |   |   schemas.py
+|   |       |   |   staticfiles.py
+|   |       |   |   status.py
+|   |       |   |   templating.py
+|   |       |   |   testclient.py
+|   |       |   |   types.py
+|   |       |   |   websockets.py
+|   |       |   |   _exception_handler.py
+|   |       |   |   _utils.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---middleware
+|   |       |   |   |   authentication.py
+|   |       |   |   |   base.py
+|   |       |   |   |   body_limit.py
+|   |       |   |   |   cors.py
+|   |       |   |   |   errors.py
+|   |       |   |   |   exceptions.py
+|   |       |   |   |   gzip.py
+|   |       |   |   |   httpsredirect.py
+|   |       |   |   |   sessions.py
+|   |       |   |   |   trustedhost.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           base.cpython-311.pyc
+|   |       |   |           body_limit.cpython-311.pyc
+|   |       |   |           cors.cpython-311.pyc
+|   |       |   |           errors.cpython-311.pyc
+|   |       |   |           exceptions.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           applications.cpython-311.pyc
+|   |       |           background.cpython-311.pyc
+|   |       |           concurrency.cpython-311.pyc
+|   |       |           convertors.cpython-311.pyc
+|   |       |           datastructures.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           formparsers.cpython-311.pyc
+|   |       |           requests.cpython-311.pyc
+|   |       |           responses.cpython-311.pyc
+|   |       |           routing.cpython-311.pyc
+|   |       |           staticfiles.cpython-311.pyc
+|   |       |           status.cpython-311.pyc
+|   |       |           templating.cpython-311.pyc
+|   |       |           testclient.cpython-311.pyc
+|   |       |           types.cpython-311.pyc
+|   |       |           websockets.cpython-311.pyc
+|   |       |           _exception_handler.cpython-311.pyc
+|   |       |           _utils.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---starlette-1.6.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---typing_extensions-4.16.0.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---typing_inspection
+|   |       |   |   introspection.py
+|   |       |   |   py.typed
+|   |       |   |   typing_objects.py
+|   |       |   |   typing_objects.pyi
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           introspection.cpython-311.pyc
+|   |       |           typing_objects.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---typing_inspection-0.4.4.dist-info
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---uvicorn
+|   |       |   |   config.py
+|   |       |   |   importer.py
+|   |       |   |   logging.py
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   server.py
+|   |       |   |   workers.py
+|   |       |   |   _ansi.py
+|   |       |   |   _compat.py
+|   |       |   |   _subprocess.py
+|   |       |   |   _types.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---lifespan
+|   |       |   |   |   off.py
+|   |       |   |   |   on.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           on.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---loops
+|   |       |   |   |   asyncio.py
+|   |       |   |   |   auto.py
+|   |       |   |   |   uvloop.py
+|   |       |   |   |   zuvloop.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asyncio.cpython-311.pyc
+|   |       |   |           auto.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---middleware
+|   |       |   |   |   asgi2.py
+|   |       |   |   |   message_logger.py
+|   |       |   |   |   proxy_headers.py
+|   |       |   |   |   wsgi.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           asgi2.cpython-311.pyc
+|   |       |   |           message_logger.cpython-311.pyc
+|   |       |   |           proxy_headers.cpython-311.pyc
+|   |       |   |           wsgi.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---protocols
+|   |       |   |   |   utils.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   +---http
+|   |       |   |   |   |   auto.py
+|   |       |   |   |   |   auto_zttp_impl.py
+|   |       |   |   |   |   flow_control.py
+|   |       |   |   |   |   h11_impl.py
+|   |       |   |   |   |   httptools_impl.py
+|   |       |   |   |   |   zttp_h2_impl.py
+|   |       |   |   |   |   zttp_impl.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           auto.cpython-311.pyc
+|   |       |   |   |           flow_control.cpython-311.pyc
+|   |       |   |   |           httptools_impl.cpython-311.pyc
+|   |       |   |   |           __init__.cpython-311.pyc
+|   |       |   |   |           
+|   |       |   |   +---websockets
+|   |       |   |   |   |   auto.py
+|   |       |   |   |   |   websockets_impl.py
+|   |       |   |   |   |   websockets_sansio_impl.py
+|   |       |   |   |   |   wsproto_impl.py
+|   |       |   |   |   |   __init__.py
+|   |       |   |   |   |   
+|   |       |   |   |   \---__pycache__
+|   |       |   |   |           auto.cpython-311.pyc
+|   |       |   |   |           websockets_sansio_impl.cpython-311.pyc
+|   |       |   |   |           __init__.cpython-311.pyc
+|   |       |   |   |           
+|   |       |   |   \---__pycache__
+|   |       |   |           utils.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---supervisors
+|   |       |   |   |   basereload.py
+|   |       |   |   |   multiprocess.py
+|   |       |   |   |   statreload.py
+|   |       |   |   |   watchfilesreload.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           basereload.cpython-311.pyc
+|   |       |   |           multiprocess.cpython-311.pyc
+|   |       |   |           watchfilesreload.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   \---__pycache__
+|   |       |           config.cpython-311.pyc
+|   |       |           importer.cpython-311.pyc
+|   |       |           logging.cpython-311.pyc
+|   |       |           main.cpython-311.pyc
+|   |       |           server.cpython-311.pyc
+|   |       |           _ansi.cpython-311.pyc
+|   |       |           _compat.cpython-311.pyc
+|   |       |           _subprocess.cpython-311.pyc
+|   |       |           _types.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---uvicorn-0.53.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE.md
+|   |       |           
+|   |       +---watchfiles
+|   |       |   |   cli.py
+|   |       |   |   filters.py
+|   |       |   |   main.py
+|   |       |   |   py.typed
+|   |       |   |   run.py
+|   |       |   |   version.py
+|   |       |   |   _rust_notify.cp311-win_amd64.pyd
+|   |       |   |   _rust_notify.pyi
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   \---__pycache__
+|   |       |           filters.cpython-311.pyc
+|   |       |           main.cpython-311.pyc
+|   |       |           run.cpython-311.pyc
+|   |       |           version.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---watchfiles-1.2.0.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   +---licenses
+|   |       |   |       LICENSE
+|   |       |   |       
+|   |       |   \---sboms
+|   |       |           watchfiles_rust_notify.cyclonedx.json
+|   |       |           
+|   |       +---websockets
+|   |       |   |   auth.py
+|   |       |   |   cli.py
+|   |       |   |   client.py
+|   |       |   |   connection.py
+|   |       |   |   datastructures.py
+|   |       |   |   exceptions.py
+|   |       |   |   frames.py
+|   |       |   |   headers.py
+|   |       |   |   http11.py
+|   |       |   |   imports.py
+|   |       |   |   protocol.py
+|   |       |   |   proxy.py
+|   |       |   |   py.typed
+|   |       |   |   server.py
+|   |       |   |   speedups.c
+|   |       |   |   speedups.cp311-win_amd64.pyd
+|   |       |   |   speedups.pyi
+|   |       |   |   streams.py
+|   |       |   |   typing.py
+|   |       |   |   uri.py
+|   |       |   |   utils.py
+|   |       |   |   version.py
+|   |       |   |   __init__.py
+|   |       |   |   __main__.py
+|   |       |   |   
+|   |       |   +---asyncio
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---extensions
+|   |       |   |   |   base.py
+|   |       |   |   |   permessage_deflate.py
+|   |       |   |   |   __init__.py
+|   |       |   |   |   
+|   |       |   |   \---__pycache__
+|   |       |   |           base.cpython-311.pyc
+|   |       |   |           permessage_deflate.cpython-311.pyc
+|   |       |   |           __init__.cpython-311.pyc
+|   |       |   |           
+|   |       |   +---legacy
+|   |       |   |       auth.py
+|   |       |   |       client.py
+|   |       |   |       exceptions.py
+|   |       |   |       framing.py
+|   |       |   |       handshake.py
+|   |       |   |       http.py
+|   |       |   |       protocol.py
+|   |       |   |       server.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---sync
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       utils.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---trio
+|   |       |   |       client.py
+|   |       |   |       connection.py
+|   |       |   |       messages.py
+|   |       |   |       router.py
+|   |       |   |       server.py
+|   |       |   |       utils.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---__pycache__
+|   |       |           datastructures.cpython-311.pyc
+|   |       |           exceptions.cpython-311.pyc
+|   |       |           frames.cpython-311.pyc
+|   |       |           headers.cpython-311.pyc
+|   |       |           http11.cpython-311.pyc
+|   |       |           imports.cpython-311.pyc
+|   |       |           protocol.cpython-311.pyc
+|   |       |           server.cpython-311.pyc
+|   |       |           streams.cpython-311.pyc
+|   |       |           typing.cpython-311.pyc
+|   |       |           utils.cpython-311.pyc
+|   |       |           version.cpython-311.pyc
+|   |       |           __init__.cpython-311.pyc
+|   |       |           
+|   |       +---websockets-17.1.dist-info
+|   |       |   |   entry_points.txt
+|   |       |   |   INSTALLER
+|   |       |   |   METADATA
+|   |       |   |   RECORD
+|   |       |   |   REQUESTED
+|   |       |   |   top_level.txt
+|   |       |   |   WHEEL
+|   |       |   |   
+|   |       |   \---licenses
+|   |       |           LICENSE
+|   |       |           
+|   |       +---yaml
+|   |       |       composer.py
+|   |       |       constructor.py
+|   |       |       cyaml.py
+|   |       |       dumper.py
+|   |       |       emitter.py
+|   |       |       error.py
+|   |       |       events.py
+|   |       |       loader.py
+|   |       |       nodes.py
+|   |       |       parser.py
+|   |       |       reader.py
+|   |       |       representer.py
+|   |       |       resolver.py
+|   |       |       scanner.py
+|   |       |       serializer.py
+|   |       |       tokens.py
+|   |       |       _yaml.cp311-win_amd64.pyd
+|   |       |       __init__.py
+|   |       |       
+|   |       +---_pytest
+|   |       |   |   cacheprovider.py
+|   |       |   |   capture.py
+|   |       |   |   compat.py
+|   |       |   |   debugging.py
+|   |       |   |   deprecated.py
+|   |       |   |   doctest.py
+|   |       |   |   faulthandler.py
+|   |       |   |   fixtures.py
+|   |       |   |   freeze_support.py
+|   |       |   |   helpconfig.py
+|   |       |   |   hookspec.py
+|   |       |   |   junitxml.py
+|   |       |   |   legacypath.py
+|   |       |   |   logging.py
+|   |       |   |   main.py
+|   |       |   |   monkeypatch.py
+|   |       |   |   nodes.py
+|   |       |   |   outcomes.py
+|   |       |   |   pastebin.py
+|   |       |   |   pathlib.py
+|   |       |   |   py.typed
+|   |       |   |   pytester.py
+|   |       |   |   pytester_assertions.py
+|   |       |   |   python.py
+|   |       |   |   python_api.py
+|   |       |   |   raises.py
+|   |       |   |   recwarn.py
+|   |       |   |   reports.py
+|   |       |   |   runner.py
+|   |       |   |   scope.py
+|   |       |   |   setuponly.py
+|   |       |   |   setupplan.py
+|   |       |   |   skipping.py
+|   |       |   |   stash.py
+|   |       |   |   stepwise.py
+|   |       |   |   subtests.py
+|   |       |   |   terminal.py
+|   |       |   |   terminalprogress.py
+|   |       |   |   threadexception.py
+|   |       |   |   timing.py
+|   |       |   |   tmpdir.py
+|   |       |   |   tracemalloc.py
+|   |       |   |   unittest.py
+|   |       |   |   unraisableexception.py
+|   |       |   |   warnings.py
+|   |       |   |   warning_types.py
+|   |       |   |   _argcomplete.py
+|   |       |   |   _version.py
+|   |       |   |   __init__.py
+|   |       |   |   
+|   |       |   +---assertion
+|   |       |   |       compare_text.py
+|   |       |   |       highlight.py
+|   |       |   |       rewrite.py
+|   |       |   |       truncate.py
+|   |       |   |       util.py
+|   |       |   |       _compare_any.py
+|   |       |   |       _compare_mapping.py
+|   |       |   |       _compare_sequence.py
+|   |       |   |       _compare_set.py
+|   |       |   |       _guards.py
+|   |       |   |       _typing.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---config
+|   |       |   |       argparsing.py
+|   |       |   |       exceptions.py
+|   |       |   |       findpaths.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---mark
+|   |       |   |       expression.py
+|   |       |   |       structures.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_code
+|   |       |   |       code.py
+|   |       |   |       source.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   +---_io
+|   |       |   |       pprint.py
+|   |       |   |       saferepr.py
+|   |       |   |       terminalwriter.py
+|   |       |   |       wcwidth.py
+|   |       |   |       __init__.py
+|   |       |   |       
+|   |       |   \---_py
+|   |       |           error.py
+|   |       |           path.py
+|   |       |           __init__.py
+|   |       |           
+|   |       +---_yaml
+|   |       |       __init__.py
+|   |       |       
+|   |       \---__pycache__
+|   |               typing_extensions.cpython-311.pyc
+|   |               _virtualenv.cpython-311.pyc
+|   |               
+|   \---Scripts
+|           activate
+|           activate.bat
+|           activate.csh
+|           activate.fish
+|           activate.nu
+|           activate.ps1
+|           activate.xsh
+|           activate_this.py
+|           deactivate.bat
+|           dotenv.exe
+|           fastapi.exe
+|           httpx.exe
+|           idna.exe
+|           py.test.exe
+|           pydoc.bat
+|           pygmentize.exe
+|           pytest.exe
+|           python.exe
+|           pythonw.exe
+|           uvicorn.exe
+|           watchfiles.exe
+|           websockets.exe
+|           
++---app
+|   |   config.py
+|   |   database.py
+|   |   __init__.py
+|   |   
+|   +---analyzers
+|   |   |   build.py
+|   |   |   dependencies.py
+|   |   |   documentation.py
+|   |   |   performance.py
+|   |   |   production.py
+|   |   |   project_detector.py
+|   |   |   security.py
+|   |   |   structure.py
+|   |   |   testing.py
+|   |   |   
+|   |   \---__pycache__
+|   |           build.cpython-310.pyc
+|   |           build.cpython-311.pyc
+|   |           build.cpython-314.pyc
+|   |           dependencies.cpython-310.pyc
+|   |           dependencies.cpython-311.pyc
+|   |           dependencies.cpython-314.pyc
+|   |           documentation.cpython-310.pyc
+|   |           documentation.cpython-311.pyc
+|   |           documentation.cpython-314.pyc
+|   |           performance.cpython-310.pyc
+|   |           performance.cpython-311.pyc
+|   |           performance.cpython-314.pyc
+|   |           production.cpython-310.pyc
+|   |           production.cpython-311.pyc
+|   |           production.cpython-314.pyc
+|   |           project_detector.cpython-310.pyc
+|   |           project_detector.cpython-311.pyc
+|   |           project_detector.cpython-314.pyc
+|   |           security.cpython-310.pyc
+|   |           security.cpython-311.pyc
+|   |           security.cpython-314.pyc
+|   |           structure.cpython-310.pyc
+|   |           structure.cpython-311.pyc
+|   |           structure.cpython-314.pyc
+|   |           testing.cpython-310.pyc
+|   |           testing.cpython-311.pyc
+|   |           testing.cpython-314.pyc
+|   |           
+|   +---models
+|   |   |   schemas.py
+|   |   |   
+|   |   \---__pycache__
+|   |           schemas.cpython-310.pyc
+|   |           schemas.cpython-311.pyc
+|   |           schemas.cpython-314.pyc
+|   |           
+|   +---routes
+|   |   |   analysis.py
+|   |   |   pages.py
+|   |   |   
+|   |   \---__pycache__
+|   |           analysis.cpython-311.pyc
+|   |           analysis.cpython-314.pyc
+|   |           pages.cpython-311.pyc
+|   |           pages.cpython-314.pyc
+|   |           
+|   +---services
+|   |   |   analyzer_service.py
+|   |   |   github_service.py
+|   |   |   report_service.py
+|   |   |   
+|   |   \---__pycache__
+|   |           analyzer_service.cpython-311.pyc
+|   |           analyzer_service.cpython-314.pyc
+|   |           github_service.cpython-311.pyc
+|   |           github_service.cpython-314.pyc
+|   |           report_service.cpython-311.pyc
+|   |           report_service.cpython-314.pyc
+|   |           
+|   +---utils
+|   |   |   files.py
+|   |   |   scoring.py
+|   |   |   security.py
+|   |   |   
+|   |   \---__pycache__
+|   |           files.cpython-310.pyc
+|   |           files.cpython-311.pyc
+|   |           files.cpython-314.pyc
+|   |           scoring.cpython-310.pyc
+|   |           scoring.cpython-311.pyc
+|   |           scoring.cpython-314.pyc
+|   |           security.cpython-310.pyc
+|   |           security.cpython-311.pyc
+|   |           security.cpython-314.pyc
+|   |           
+|   \---__pycache__
+|           config.cpython-310.pyc
+|           config.cpython-311.pyc
+|           config.cpython-314.pyc
+|           database.cpython-311.pyc
+|           database.cpython-314.pyc
+|           __init__.cpython-310.pyc
+|           __init__.cpython-311.pyc
+|           __init__.cpython-314.pyc
+|           
++---data
+|       devhealth.db
+|       
++---fixtures
+|   |   create_fixtures.py
+|   |   
+|   +---fastapi_service
+|   |   |   .env.example
+|   |   |   README.md
+|   |   |   requirements.txt
+|   |   |   
+|   |   \---tests
+|   |           test_auth.py
+|   |           
+|   +---legacy_vulnerable
+|   |       server.py
+|   |       
+|   \---rayva_cloud
+|       |   package.json
+|       |   README.md
+|       |   
+|       \---src
+|               config.js
+|               
++---src
+|   |   App.tsx
+|   |   index.css
+|   |   main.tsx
+|   |   
+|   +---components
+|   |       CategoryDetailView.tsx
+|   |       Dashboard.tsx
+|   |       Footer.tsx
+|   |       Header.tsx
+|   |       HistoryView.tsx
+|   |       IssueExplorer.tsx
+|   |       ProjectTree.tsx
+|   |       PythonSourceModal.tsx
+|   |       ReportView.tsx
+|   |       ResetModal.tsx
+|   |       UploadSection.tsx
+|   |       
+|   +---engine
+|   |       githubFetcher.ts
+|   |       sampleProjects.ts
+|   |       staticAnalyzer.ts
+|   |       zipExtractor.ts
+|   |       
+|   \---types
+|           analyzer.ts
+|           
++---static
+|   \---css
+|           style.css
+|           
++---templates
+|       index.html
+|       
++---uploads
+\---__pycache__
+        main.cpython-311.pyc
+        main.cpython-314.pyc
+        

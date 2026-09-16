@@ -1,0 +1,6 @@
+{
+  "name": "DevHealth",
+  "description": "Know Your Project Before Production Does. Developer-focused project health, security, and production readiness analyzer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

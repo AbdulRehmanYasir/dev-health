@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHealth — Know Your Project Before Production Does</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <span class="pulse"></span>
+            <h1>DEVHEALTH</h1>
+        </div>
+        <p class="tagline">Know Your Project Before Production Does.</p>
+    </div>
+
+    <main class="container">
+        <section class="card upload-card">
+            <h2>Analyze Repository</h2>
+            <p class="subtitle">Upload a ZIP file or provide a public GitHub URL for a comprehensive static audit.</p>
+
+            <form action="/api/analyze/upload" method="post" enctype="multipart/form-data" class="upload-form">
+                <div class="drop-zone" id="dropZone">
+                    <input type="file" name="file" id="fileInput" accept=".zip" required>
+                    <div class="drop-text">
+                        <strong>Drag & drop project .zip here</strong>
+                        <span>or click to browse files</span>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Audit ZIP Project</button>
+            </form>
+
+            <div class="divider"><span>OR</span></div>
+
+            <form id="ghForm" class="github-form">
+                <input type="url" id="ghUrl" placeholder="https://github.com/owner/repository" required>
+                <button type="submit" class="btn-secondary">Audit Public GitHub Repo</button>
+            </form>
+        </section>
+
+        {% if history %}
+        <section class="card history-card">
+            <h3>Recent Audits</h3>
+            <div class="history-list">
+                {% for item in history %}
+                <div class="history-row">
+                    <span class="project-name">{{ item.name }}</span>
+                    <span class="badge {{ item.status.lower().replace(' ', '-') }}">{{ item.status }}</span>
+                    <span class="score">{{ item.overall_score }} / 100</span>
+                    <a href="/api/report/{{ item.id }}" class="link">View Report &rarr;</a>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </main>
+</body>
+</html>
