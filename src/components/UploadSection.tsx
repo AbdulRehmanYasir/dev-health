@@ -9,12 +9,34 @@ import {
   CheckCircle2,
   Sparkles,
 } from "lucide-react";
-import { SAMPLE_PROJECTS, SampleProjectFixture } from "../engine/sampleProjects";
-import { runStaticAudit } from "../engine/staticAnalyzer";
 import { AnalysisReport } from "../types/analyzer";
 
 const API_BASE_URL =
   import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+
+const SAMPLE_PROJECTS = [
+  {
+    id: "fastapi-service",
+    name: "FastAPI Authentication Service",
+    type: "Python Application",
+    description:
+      "Production-style authentication service with dependency, security, testing, and deployment checks.",
+  },
+  {
+    id: "legacy-vulnerable",
+    name: "Legacy E-Commerce API",
+    type: "Python Application",
+    description:
+      "High-risk legacy repository containing intentionally vulnerable patterns for security analysis.",
+  },
+  {
+    id: "rayva-cloud",
+    name: "Rayva Cloud",
+    type: "React Application",
+    description:
+      "Cloud execution and resource-management project used to demonstrate a larger real-world repository audit.",
+  },
+];
 
 interface UploadSectionProps {
   onAuditComplete: (report: AnalysisReport) => void;
@@ -30,9 +52,9 @@ interface UploadSectionProps {
  * Convert API response keys from snake_case to camelCase.
  *
  * Example:
- * project_name      -> projectName
- * build_health      -> buildHealth
- * production_status -> productionStatus
+ * project_name       -> projectName
+ * build_health       -> buildHealth
+ * production_status  -> productionStatus
  * recommended_actions -> recommendedActions
  */
 const camelizeKeys = (value: any): any => {
@@ -71,8 +93,12 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
   const [githubUrl, setGithubUrl] = useState("");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isDragging, setIsDragging] = useState(false);
+
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  /**
+   * Analyze an uploaded ZIP through the Python backend.
+   */
   const handleZipFile = async (file: File) => {
     if (!file.name.toLowerCase().endsWith(".zip")) {
       setErrorMessage("Please select a standard .zip archive file.");
@@ -103,14 +129,16 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
 
       setProgressPercent(70);
       setProgressText(
-        "Running security & production readiness analysis..."
+        "Running Python security & production analysis..."
       );
 
       const data = await response.json();
 
       if (!response.ok) {
         throw new Error(
-          data?.detail || data?.error || "Failed to analyze ZIP archive."
+          data?.detail ||
+            data?.error ||
+            "Failed to analyze ZIP archive."
         );
       }
 
@@ -123,17 +151,24 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
 
       onAuditComplete(normalizedReport);
     } catch (err: any) {
-      setErrorMessage(err?.message || "Failed to analyze ZIP archive.");
+      setErrorMessage(
+        err?.message || "Failed to analyze ZIP archive."
+      );
       setProgressPercent(0);
     } finally {
       setIsLoading(false);
     }
   };
 
+  /**
+   * Analyze a public GitHub repository through the Python backend.
+   */
   const handleGithubSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!githubUrl.trim()) return;
+    if (!githubUrl.trim()) {
+      return;
+    }
 
     setErrorMessage(null);
     setIsLoading(true);
@@ -155,7 +190,9 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
       });
 
       setProgressPercent(70);
-      setProgressText("Analyzing source code and dependencies...");
+      setProgressText(
+        "Running Python static analysis engine..."
+      );
 
       const data = await response.json();
 
@@ -186,35 +223,66 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
     }
   };
 
-  const handleSampleSelect = async (sample: SampleProjectFixture) => {
+  /**
+   * Analyze a built-in sample through the Python backend.
+   *
+   * The frontend only contains display metadata.
+   * All sample ingestion, analysis, scoring, and reporting
+   * happen inside FastAPI/Python.
+   */
+  const handleSampleSelect = async (
+    sample: (typeof SAMPLE_PROJECTS)[number]
+  ) => {
     setErrorMessage(null);
     setIsLoading(true);
-    setProgressPercent(20);
-    setProgressText(`Loading fixture: ${sample.name}...`);
+    setProgressPercent(10);
+    setProgressText(`Loading ${sample.name}...`);
 
-    await new Promise((r) => setTimeout(r, 250));
+    try {
+      setProgressPercent(30);
+      setProgressText(
+        "Sending sample project to DevHealth backend..."
+      );
 
-    setProgressPercent(60);
-    setProgressText(
-      "Running security regex heuristics & AST pattern scans..."
-    );
+      const response = await fetch(
+        `${API_BASE_URL}/api/analyze/sample/${sample.id}`,
+        {
+          method: "POST",
+        }
+      );
 
-    await new Promise((r) => setTimeout(r, 200));
+      setProgressPercent(70);
+      setProgressText(
+        "Running Python static analysis engine..."
+      );
 
-    const report = runStaticAudit(
-      sample.files,
-      sample.name,
-      "sample",
-      sample.tagline
-    );
+      const data = await response.json();
 
-    setProgressPercent(100);
-    setProgressText("Audit complete!");
+      if (!response.ok) {
+        throw new Error(
+          data?.detail ||
+            data?.error ||
+            `Could not analyze ${sample.name}.`
+        );
+      }
 
-    await new Promise((r) => setTimeout(r, 250));
+      const normalizedReport = normalizeApiReport(data);
 
-    onAuditComplete(report);
-    setIsLoading(false);
+      setProgressPercent(100);
+      setProgressText("Audit complete!");
+
+      await new Promise((r) => setTimeout(r, 250));
+
+      onAuditComplete(normalizedReport);
+    } catch (err: any) {
+      setErrorMessage(
+        err?.message ||
+          `Could not analyze ${sample.name}.`
+      );
+      setProgressPercent(0);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -223,7 +291,9 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-mono font-medium mb-3">
           <ShieldCheck className="w-3.5 h-3.5" />
-          <span>Zero Execution Sandbox &bull; Static Analysis Only</span>
+          <span>
+            Zero Execution Sandbox &bull; Static Analysis Only
+          </span>
         </div>
 
         <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-100 tracking-tight">
@@ -285,7 +355,7 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
 
             <div className="flex items-center gap-1.5">
               <CheckCircle2 className="w-3 h-3 text-cyan-400" />
-              AST Regex Scans
+              Python Static Analysis
             </div>
 
             <div className="flex items-center gap-1.5">
@@ -410,8 +480,8 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
               </div>
 
               <p className="text-[11px] text-slate-500 mt-3">
-                Fetches and analyzes the public repository through the DevHealth
-                backend.
+                Fetches and analyzes the public repository through the
+                DevHealth backend.
               </p>
             </div>
           </div>
@@ -421,7 +491,9 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-slate-400">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>Or Select a Pre-Configured Sample Project</span>
+                <span>
+                  Or Select a Pre-Configured Sample Project
+                </span>
               </div>
 
               <span className="text-[11px] text-slate-500">
@@ -434,7 +506,8 @@ export const UploadSection: React.FC<UploadSectionProps> = ({
                 <button
                   key={sample.id}
                   onClick={() => handleSampleSelect(sample)}
-                  className="p-3.5 rounded-lg border border-slate-800 hover:border-cyan-500/50 bg-slate-900/40 hover:bg-slate-900 transition-all text-left flex flex-col justify-between group"
+                  disabled={isLoading}
+                  className="p-3.5 rounded-lg border border-slate-800 hover:border-cyan-500/50 bg-slate-900/40 hover:bg-slate-900 transition-all text-left flex flex-col justify-between group disabled:opacity-50 disabled:pointer-events-none"
                 >
                   <div>
                     <div className="flex items-center justify-between">
