@@ -677,6 +677,11 @@ Archives are checked before extraction to prevent directory traversal and excess
 
 ## 🚀 Getting Started
 
+DevHealth is a Python/FastAPI application with a React/TypeScript frontend. The
+FastAPI service owns project ingestion, static analysis, scoring, report
+generation, and SQLite history. The Vite application is a separate browser
+client that calls the documented `/api/*` endpoints.
+
 ### 1. Clone the repository
 
 ```bash
@@ -733,6 +738,37 @@ npm run dev
 
 The frontend will be available at the Vite development URL shown in the terminal.
 
+The frontend uses `VITE_API_URL` for the backend origin. Create `.env.local`
+when the backend is not running at the default local URL:
+
+```text
+VITE_API_URL=http://127.0.0.1:8000
+```
+
+The existing API contracts include ZIP upload, GitHub repository, and sample
+analysis at `/api/analyze/upload`, `/api/analyze/github`, and
+`/api/analyze/sample/{sample_id}`. History and HTML reports remain available
+through `/api/history`, `/api/project/{project_id}`, and
+`/api/report/{project_id}`.
+
+## GitHub Pages
+
+GitHub Pages hosts only the Vite frontend; it cannot run FastAPI or SQLite.
+The workflow in `.github/workflows/deploy-pages.yml` builds the frontend with
+the `/dev-health/` base path and deploys `dist/` to Pages. Set a repository
+variable named `VITE_API_URL` to the public URL of a separately deployed
+FastAPI backend before using the Pages site. The backend must allow the Pages
+origin through its CORS policy.
+
+For the repository's current remote, the Pages URL is:
+
+```text
+https://abdulrehmanyasir.github.io/dev-health/
+```
+
+In **Settings > Pages**, choose **GitHub Actions** as the source. The workflow
+deploys from the `main` branch after a successful frontend build.
+
 ---
 
 ## 🏗 Production Build
@@ -758,6 +794,23 @@ Run the analyzer tests:
 ```bash
 python -m pytest
 ```
+
+Frontend checks:
+
+```bash
+npm run lint
+npm run build
+```
+
+## Language and repository hygiene
+
+The tracked application source consists of the Python backend in `app/` and
+`main.py`, plus the required React/TypeScript client in `src/`. Generated
+metadata, lockfiles, build output, caches, uploads, and local environments are
+excluded from Linguist statistics through `.gitattributes` and `.gitignore`.
+The real frontend source remains tracked and is not relabeled as generated or
+vendored, so language percentages reflect the actual application rather than
+an artificial Python increase.
 
 Or:
 

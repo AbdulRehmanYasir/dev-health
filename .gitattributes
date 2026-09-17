@@ -1,0 +1,14 @@
+# Keep generated and package-manager output out of GitHub language statistics.
+*.lock linguist-generated
+package-lock.json linguist-generated
+metadata.json linguist-generated
+
+# These directories are runtime/build/vendor output and should never be
+# treated as application source if they are present in a checkout.
+dist/** linguist-generated
+node_modules/** linguist-vendored
+.venv/** linguist-vendored
+.venv311/** linguist-vendored
+uploads/** linguist-generated
+data/** linguist-generated
+pytest-cache-files-*/** linguist-generated
